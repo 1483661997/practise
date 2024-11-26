@@ -1,4 +1,4 @@
-package DataStruct.BackTrack;
+package DataStruct.BASE.BackTrack;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +26,7 @@ import java.util.List;
 输出：["a","b","c"]
 
  */
-public class letterCombinations {
+public class LetterCombinations {
     public static void main(String[] args) {
         String str = "234";
         List<String> list = letterCombinations(str);
@@ -34,19 +34,6 @@ public class letterCombinations {
     } 
     public static List<String> letterCombinations(String digits) {
         if(digits.length() == 0 ) return new ArrayList<>();
-        //dfs ?
-        //bfs ?
-        /*
-         * 2 abc
-         * 3 def
-         * 4 
-         * 5
-         * 6
-         * 7
-         * 8
-         * 9
-         */
-        
         List<String> list = new ArrayList<>();
         digitsToLetter(digits, list, 0, new StringBuilder());
         

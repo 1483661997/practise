@@ -24,10 +24,13 @@ import java.util.List;
 输出：[[1]]
 
  */
-public class permute {
+public class Permute {
+    private boolean[] isVisited;
+    List<List<Integer>> result;
     public static void main(String[] args) {
         int[] nums = {1,2,3};
-        List<List<Integer>> list = permute(nums);
+        Permute permute = new Permute();
+        List<List<Integer>> list = permute.permute(nums);
         for(List<Integer> i : list){
             for(int j : i){
                 System.out.print(j);
@@ -35,7 +38,40 @@ public class permute {
             System.out.println();
         }
     }
-    public static List<List<Integer>> permute(int[] nums) {
+    public List<List<Integer>> permute(int[] nums) {
+        int n = nums.length;
+        result = new ArrayList<>();
+        int len = nums.length;
+        isVisited = new boolean[len];
+
+        for(int i = 0; i < len; i++){
+            isVisited[i] = true;
+            List<Integer> list = new ArrayList<>();
+            list.add(nums[i]);
+            backTrack(nums, list);
+            isVisited[i] = false;
+        }
+        return result;
+    }
+
+
+    public void backTrack(int[] nums, List<Integer> list){
+        if(list.size() == nums.length){
+            result.add(new ArrayList<>(list));
+            return;
+        }
+        for(int i = 0; i < nums.length; i++){
+            if(!isVisited[i]){
+                isVisited[i] = true;
+                list.add(nums[i]);
+                backTrack(nums, list);
+                isVisited[i] = false;
+                list.remove(list.size()-1);
+            }
+        }
+
+    }
+    public static List<List<Integer>> permute1(int[] nums) {
         //回溯
         List<List<Integer>> list = new ArrayList<>();
         boolean[] isVisit = new boolean[nums.length];

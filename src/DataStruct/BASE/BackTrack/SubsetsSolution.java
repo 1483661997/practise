@@ -1,4 +1,4 @@
-package DataStruct.BackTrack;
+package DataStruct.BASE.BackTrack;
 
 import java.util.ArrayList;
 
@@ -26,40 +26,38 @@ import java.util.ArrayList;
 
 import java.util.*;
 public class SubsetsSolution {
+    private  List<List<Integer>> list;
     public static void main(String[] args) {
-        for(List<Integer> list : subsets(new int[]{1,2,3})){
+        for(List<Integer> list : new SubsetsSolution().subsets(new int[]{1,2,3})){
             for(int cur : list)
                 System.out.print(cur + " ");
             System.out.println();
         }
     }
-    public static List<List<Integer>> subsets(int[] nums) {
-
-        List<List<Integer>> list = new ArrayList<>();
+    public List<List<Integer>> subsets(int[] nums) {
+        list = new ArrayList<>();
         list.add(new ArrayList<>());
 
-
         for(int i = 0; i < nums.length; i++)
-            add(nums, list, new ArrayList<>(), i);
+            add(nums, new ArrayList<>(), i);
 
         
         
         return list;
     }
-    public static void add(int[] nums, List<List<Integer>> list, List<Integer> member, int start){
-        member.add(nums[start]);
-        int len = nums.length;
-        start++;
+    public void add(int[] nums,  List<Integer> member, int start){
 
-        // list.add(member);
-        add1(list, member);
-        for(int i = start; i < len; i++){
-            add(nums, list,  member, i);
+        if(nums.length == start){
+            list.add(new ArrayList<>(member));
+            return;
         }
-        for(int i = 0; i < member.size(); i++){
-            if(member.get(i) == nums[start-1])
-                member.remove(i);
+        member.add(nums[start]);
+        for(int i = start+1; i <= nums.length; i++){
+            add(nums, member, i);
         }
+        member.remove(member.size()-1);
+
+
     }
     public static void add1(List<List<Integer>> list, List<Integer> member){
         List<Integer> copy = new ArrayList<>();
