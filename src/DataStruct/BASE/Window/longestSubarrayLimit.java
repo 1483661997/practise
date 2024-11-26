@@ -1,4 +1,4 @@
-package DataStruct.Window;
+package DataStruct.BASE.Window;
 
 import java.util.Deque;
 import java.util.LinkedList;

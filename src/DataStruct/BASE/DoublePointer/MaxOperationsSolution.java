@@ -1,4 +1,4 @@
-package DataStruct.DoublePointer;
+package DataStruct.BASE.DoublePointer;
 
 import java.util.Arrays;
 

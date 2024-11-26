@@ -1,4 +1,4 @@
-package DataStruct.Bitwise;
+package DataStruct.BASE.Bitwise;
 
 /*
  * 数字范围按位与

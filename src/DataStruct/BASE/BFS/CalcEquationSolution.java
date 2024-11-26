@@ -1,4 +1,4 @@
-package DataStruct.BFS;
+package DataStruct.BASE.BFS;
 /*
  * 399. 除法求值
 

@@ -1,4 +1,4 @@
-package DataStruct.Window;
+package DataStruct.BASE.Window;
 
 /*
  * 643. 子数组最大平均数 I

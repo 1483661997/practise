@@ -1,4 +1,4 @@
-package DataStruct.array;
+package DataStruct.BASE.array;
 
 /*
  * 除自身以外数组的乘积

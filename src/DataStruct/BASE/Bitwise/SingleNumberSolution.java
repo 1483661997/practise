@@ -1,4 +1,4 @@
-package DataStruct.Bitwise;
+package DataStruct.BASE.Bitwise;
 
 /*
  * 只出现一次的数字

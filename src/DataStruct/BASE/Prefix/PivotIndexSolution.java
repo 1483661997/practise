@@ -1,4 +1,4 @@
-package DataStruct.Prefix;
+package DataStruct.BASE.Prefix;
 /*
  * 724. 寻找数组的中心下标
 

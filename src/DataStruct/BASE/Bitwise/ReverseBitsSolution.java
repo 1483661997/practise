@@ -1,4 +1,4 @@
-package DataStruct.Bitwise;
+package DataStruct.BASE.Bitwise;
 
 /*
  *  颠倒二进制位

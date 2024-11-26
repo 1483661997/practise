@@ -231,7 +231,7 @@ crc_len = 4
 
 if __name__ == "__main__":
     gnss_ip = '192.168.1.64'  # GNSS设备的IP地址
-    gnss_port = 8001        # GNSS设备的端口号
+    gnss_port = 8002        # GNSS设备的端口号
     # receive_and_unpack_gnss_data(gnss_ip, gnss_port)
     read_data_from_port(gnss_ip, gnss_port, unpack_packet, logger, sync1, sync2, sync3, crc_function, ascii_msg_start, ascii_msg_end, crc_len)
     # parse()

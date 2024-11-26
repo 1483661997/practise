@@ -1,4 +1,4 @@
-package DataStruct.matrix;
+package DataStruct.BASE.matrix;
 
 import java.util.*;
 

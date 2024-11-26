@@ -1,4 +1,4 @@
-package DataStruct.DFS;
+package DataStruct.BASE.DFS;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package DataStruct.BFS;
+package DataStruct.BASE.BFS;
 
 import java.util.*;
 public class snakesAndLadders {

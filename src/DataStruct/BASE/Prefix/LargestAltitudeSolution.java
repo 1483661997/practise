@@ -1,4 +1,4 @@
-package DataStruct.Prefix;
+package DataStruct.BASE.Prefix;
 
 /*
  * 1732. 找到最高海拔

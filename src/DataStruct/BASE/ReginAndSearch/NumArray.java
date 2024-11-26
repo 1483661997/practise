@@ -1,4 +1,4 @@
-package DataStruct.ReginAndSearch;
+package DataStruct.BASE.ReginAndSearch;
 
 ////////////////////////////////////////////////////
 //

@@ -70,11 +70,11 @@ public class RemoveDuplicateLettersSolution {
                 continue;
             }
             
-            while(!result.isEmpty() && ch < result.charAt(result.length()-1) 
-            && characterCount[result.charAt(result.length() -1) - 'a'] > 0 ){
-                isAns[result.charAt(result.length() -1) - 'a'] = false;
-                result.deleteCharAt(result.length() -1);
-            }
+            // while(!result.isEmpty() && ch < result.charAt(result.length()-1) 
+            // && characterCount[result.charAt(result.length() -1) - 'a'] > 0 ){
+            //     isAns[result.charAt(result.length() -1) - 'a'] = false;
+            //     result.deleteCharAt(result.length() -1);
+            // }
             result.append(ch);
             isAns[ch - 'a'] = true;
                 
@@ -103,11 +103,11 @@ public class RemoveDuplicateLettersSolution {
             }
             // 设 x = ans.charAt(ans.length() - 1)，
             // 如果 c < x，且右边还有 x，那么可以把 x 去掉，因为后面可以重新把 x 加到 ans 中
-            while (     !ans.isEmpty() && c < ans.charAt(ans.length() - 1) 
-                    &&  left[ans.charAt(ans.length() - 1) - 'a'] > 0) {
-                inAns[ans.charAt(ans.length() - 1) - 'a'] = false; // 标记 x 不在 ans 中
-                ans.deleteCharAt(ans.length() - 1);
-            }
+            // while (     !ans.isEmpty() && c < ans.charAt(ans.length() - 1) 
+            //         &&  left[ans.charAt(ans.length() - 1) - 'a'] > 0) {
+            //     inAns[ans.charAt(ans.length() - 1) - 'a'] = false; // 标记 x 不在 ans 中
+            //     ans.deleteCharAt(ans.length() - 1);
+            // }
             ans.append(c); // 把 c 加到 ans 的末尾
             inAns[c - 'a'] = true; // 标记 c 在 ans 中
         }

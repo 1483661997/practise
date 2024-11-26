@@ -1,4 +1,4 @@
-package DataStruct.Bitwise;
+package DataStruct.BASE.Bitwise;
 
 /*
  * 位1的个数

@@ -1,4 +1,4 @@
-package DataStruct.BinarySearch;
+package DataStruct.BASE.BinarySearch;
 
 
 /*

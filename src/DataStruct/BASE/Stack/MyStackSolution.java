@@ -1,4 +1,4 @@
-package DataStruct.Stack;
+package DataStruct.BASE.Stack;
 
 import java.util.*;
 

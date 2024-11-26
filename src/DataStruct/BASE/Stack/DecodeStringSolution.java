@@ -1,4 +1,4 @@
-package DataStruct.Stack;
+package DataStruct.BASE.Stack;
 import java.util.*;
 /*
  * 394. 字符串解码

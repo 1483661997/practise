@@ -1,4 +1,4 @@
-package DataStruct.ReginAndSearch;
+package DataStruct.BASE.ReginAndSearch;
 
 public class NumMatrix {
     //matrix[i][j]代表他的左上角的求和

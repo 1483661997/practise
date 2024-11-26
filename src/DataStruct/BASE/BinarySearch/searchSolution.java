@@ -1,4 +1,4 @@
-package DataStruct.BinarySearch;
+package DataStruct.BASE.BinarySearch;
 
 /*
  * . 搜索旋转排序数组

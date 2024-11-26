@@ -1,4 +1,4 @@
-package DataStruct.Window;
+package DataStruct.BASE.Window;
 /*
  * 1456. 定长子串中元音的最大数目
 给你字符串 s 和整数 k 。

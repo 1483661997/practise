@@ -1,4 +1,4 @@
-package DataStruct.Trie;
+package DataStruct.BASE.Trie;
 
 import java.util.HashMap;
 import java.util.Map;
