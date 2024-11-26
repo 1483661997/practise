@@ -1,0 +1,23 @@
+Starting iperf server on 192.168.5.103 at port 5204
+Results from 192.168.5.100 to 192.168.5.103:5204
+Connecting to host 192.168.5.103, port 5204
+[  5] local 192.168.5.100 port 37676 connected to 192.168.5.103 port 5204
+[ ID] Interval           Transfer     Bitrate         Total Datagrams
+[  5]   0.00-1.00   sec   362 MBytes  3.04 Gbits/sec  266462  
+[  5]   1.00-2.00   sec   362 MBytes  3.04 Gbits/sec  266364  
+[  5]   2.00-3.00   sec   362 MBytes  3.04 Gbits/sec  266214  
+[  5]   3.00-4.00   sec   364 MBytes  3.06 Gbits/sec  268009  
+[  5]   4.00-5.00   sec   364 MBytes  3.06 Gbits/sec  268000  
+[  5]   5.00-6.00   sec   365 MBytes  3.06 Gbits/sec  268072  
+[  5]   6.00-7.00   sec   365 MBytes  3.06 Gbits/sec  268432  
+[  5]   7.00-8.00   sec   363 MBytes  3.05 Gbits/sec  267287  
+[  5]   8.00-9.00   sec   359 MBytes  3.01 Gbits/sec  264243  
+[  5]   9.00-10.00  sec   343 MBytes  2.88 Gbits/sec  252584  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-10.00  sec  3.53 GBytes  3.03 Gbits/sec  0.000 ms  0/2655667 (0%)  sender
+[  5]   0.00-10.06  sec  1.24 GBytes  1.06 Gbits/sec  0.013 ms  1720080/2655631 (65%)  receiver
+
+iperf Done.
+
+Killed iperf server on 192.168.5.103: 

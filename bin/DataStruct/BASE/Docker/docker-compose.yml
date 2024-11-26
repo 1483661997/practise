@@ -1,0 +1,20 @@
+version: '3.9'  
+services:  
+    wechat:  
+        image: bestwu/wechat  
+        user: '`\'  
+        environment:  
+            - UID=`id  
+            - GID=`id  
+            - GTK_IM_MODULE=ibus\  
+            - QT_IM_MODULE=ibus\  
+            - XMODIFIERS=@im=ibus\  
+            - DISPLAY=unix$DISPLAY\  
+        volumes:  
+            - '/docker_software/wechat:/he\'  
+            - '/docker_software/wechat/WeChatFiles:/WeChatFiles\'  
+            - '/tmp/.X11-unix:/tmp/.X11-unix\'  
+        ipc: host\  
+        devices:  
+            - /dev/snd\  
+        container_name: wechat\  

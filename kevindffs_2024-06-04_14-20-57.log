@@ -1,0 +1,52 @@
+2024-06-04 14:20:57,207 - INFO - Connected to /dev/ttyCH9344USB0 at 115200 baud.
+2024-06-04 14:20:59,209 - INFO - version
+2024-06-04 14:20:59,210 - INFO - > 
+2024-06-04 14:20:59,211 - INFO - clover_main_mcu
+2024-06-04 14:20:59,212 - INFO - ------------------------------
+2024-06-04 14:20:59,213 - INFO - FW Is: app
+2024-06-04 14:20:59,214 - INFO - FW Version: release_v2_clover-main-mcu_v0-3_RC13.B
+2024-06-04 14:20:59,216 - INFO - Buildstamp: 2024-06-03/02:30:28
+2024-06-04 14:20:59,217 - INFO - Githash: 23b4130bde9151fe969aaca050c962c21a910b1e
+2024-06-04 14:20:59,218 - INFO - ------------------------------
+2024-06-04 14:21:00,220 - INFO - >
+2024-06-04 14:21:00,220 - INFO - ****************升级前*************************
+2024-06-04 14:21:05,288 - INFO - 
+2024-06-04 14:21:05,288 - INFO - The upgrade has finished :0%.
+2024-06-04 14:21:05,388 - INFO - 
+2024-06-04 14:21:05,388 - INFO - The upgrade has finished :0%.
+2024-06-04 14:21:05,488 - INFO - 
+2024-06-04 14:21:05,488 - INFO - The upgrade has finished :0%.
+2024-06-04 14:21:05,588 - INFO - 
+2024-06-04 14:21:05,589 - INFO - The upgrade has finished :0%.
+2024-06-04 14:21:05,689 - INFO - 
+2024-06-04 14:21:05,689 - INFO - The upgrade has finished :0%.
+2024-06-04 14:21:05,789 - INFO - 
+2024-06-04 14:21:05,789 - INFO - The upgrade has finished :0%.
+2024-06-04 14:21:05,889 - INFO - 
+2024-06-04 14:21:05,889 - INFO - The upgrade has finished :1%.
+2024-06-04 14:21:05,989 - INFO - 
+2024-06-04 14:21:05,990 - INFO - The upgrade has finished :1%.
+2024-06-04 14:21:06,090 - INFO - 
+2024-06-04 14:21:06,090 - INFO - The upgrade has finished :1%.
+2024-06-04 14:21:06,190 - INFO - 
+2024-06-04 14:21:06,190 - INFO - The upgrade has finished :1%.
+2024-06-04 14:21:06,290 - INFO - 
+2024-06-04 14:21:06,291 - INFO - The upgrade has finished :2%.
+2024-06-04 14:21:06,390 - INFO - 
+2024-06-04 14:21:06,391 - INFO - The upgrade has finished :2%.
+2024-06-04 14:21:06,491 - INFO - 
+2024-06-04 14:21:06,491 - INFO - The upgrade has finished :2%.
+2024-06-04 14:21:06,591 - INFO - 
+2024-06-04 14:21:06,591 - INFO - The upgrade has finished :2%.
+2024-06-04 14:21:06,691 - INFO - 
+2024-06-04 14:21:06,691 - INFO - The upgrade has finished :3%.
+2024-06-04 14:21:06,791 - INFO - 
+2024-06-04 14:21:06,792 - INFO - The upgrade has finished :3%.
+2024-06-04 14:21:06,822 - ERROR - Traceback (most recent call last):
+2024-06-04 14:21:06,823 - ERROR -   File "/home/haobaisong/Documents/project/test/src/python/main.py", line 31, in <module>
+2024-06-04 14:21:06,824 - ERROR - main()
+2024-06-04 14:21:06,825 - ERROR -   File "/home/haobaisong/Documents/project/test/src/python/main.py", line 20, in main
+2024-06-04 14:21:06,825 - ERROR - update_firmware(commands.ethernet_upgrade)
+2024-06-04 14:21:06,826 - ERROR -   File "/home/haobaisong/Documents/project/test/src/python/OTA.py", line 83, in update_firmware
+2024-06-04 14:21:06,827 - ERROR - for line in process.stdout:
+2024-06-04 14:21:06,827 - ERROR - KeyboardInterrupt

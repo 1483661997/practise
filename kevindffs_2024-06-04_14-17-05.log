@@ -1,0 +1,106 @@
+2024-06-04 14:17:05,044 - INFO - Connected to /dev/ttyCH9344USB0 at 115200 baud.
+2024-06-04 14:17:07,048 - INFO - version
+2024-06-04 14:17:07,048 - INFO - > 
+2024-06-04 14:17:07,049 - INFO - clover_main_mcu
+2024-06-04 14:17:07,050 - INFO - ------------------------------
+2024-06-04 14:17:07,051 - INFO - FW Is: app
+2024-06-04 14:17:07,052 - INFO - FW Version: release_v2_clover-main-mcu_v0-3_RC13.B
+2024-06-04 14:17:07,053 - INFO - Buildstamp: 2024-06-03/02:30:28
+2024-06-04 14:17:07,054 - INFO - Githash: 23b4130bde9151fe969aaca050c962c21a910b1e
+2024-06-04 14:17:07,055 - INFO - ------------------------------
+2024-06-04 14:17:08,057 - INFO - >
+2024-06-04 14:17:08,058 - INFO - ****************升级前*************************
+2024-06-04 14:17:12,765 - INFO - 
+2024-06-04 14:17:31,110 - INFO - 
+2024-06-04 14:17:31,111 - INFO - The upgrade has finished :50%.
+2024-06-04 14:17:31,111 - INFO - error:
+2024-06-04 14:17:31,111 - INFO - power_control() takes 1 positional argument but 2 were given
+2024-06-04 14:17:31,708 - INFO - 打开: ASRL::/dev/ttyUSB0::INSTR
+2024-06-04 14:17:31,712 - INFO - 设置远程控制...
+2024-06-04 14:17:31,713 - INFO - 发送命令: OUTP 0
+2024-06-04 14:17:35,221 - INFO - 打开: ASRL::/dev/ttyUSB0::INSTR
+2024-06-04 14:17:35,226 - INFO - 设置远程控制...
+2024-06-04 14:17:35,227 - INFO - 发送命令: OUTP 1
+2024-06-04 14:17:35,229 - INFO - ****************升级后**************************
+2024-06-04 14:17:35,230 - INFO - Connected to /dev/ttyCH9344USB0 at 115200 baud.
+2024-06-04 14:17:37,563 - INFO - clover_main_mcu
+2024-06-04 14:17:37,565 - INFO - ------------------------------
+2024-06-04 14:17:37,566 - INFO - FW Is: app
+2024-06-04 14:17:37,568 - INFO - FW Version: release_v2_clover-main-mcu_v0-3_RC13.B
+2024-06-04 14:17:37,570 - INFO - Buildstamp: 2024-06-03/02:30:28
+2024-06-04 14:17:37,572 - INFO - Githash: 23b4130bde9151fe969aaca050c962c21a910b1e
+2024-06-04 14:17:37,574 - INFO - ------------------------------
+2024-06-04 14:17:37,576 - INFO - [1;32mI 113 cpu0_main.c:70] Starting Clover AURIX M.[0m
+2024-06-04 14:17:37,579 - INFO - [1;32mI 113 control.c:113] Updated adcu power state[0]---->[1][0m
+2024-06-04 14:17:37,582 - INFO - [1;31mE 113 power_work.c:67] Wake not detected! Proceed to standby status![0m
+2024-06-04 14:17:37,584 - INFO - start to power to normal anyway
+2024-06-04 14:17:37,587 - INFO - [1;32mI 113 power.c:77] To Normal:Pull up AURIXM_VBAT1_PWR_EN first.[0m
+2024-06-04 14:17:37,591 - INFO - [1;32mI 113 control.c:162] Next will be to toggle adcu power state: [1]---->[2][0m
+2024-06-04 14:17:37,594 - INFO - [1;32mI 113 group_power_control.c:166] Next will be to toggle OrinC power state: [1]:[2]---->[1][0m
+2024-06-04 14:17:37,598 - INFO - [1;32mI 113 group_power_control.c:166] Next will be to toggle OrinA power state: [1]:[2]---->[1][0m
+2024-06-04 14:17:37,603 - INFO - [1;32mI 113 group_power_control.c:166] Next will be to toggle OrinB power state: [1]:[2]---->[1][0m
+2024-06-04 14:17:37,606 - INFO - [1;32mI 113 group_power_control.c:166] Next will be to toggle Ethernet power state: [1]:[2]---->[1][0m
+2024-06-04 14:17:37,607 - INFO - pet dog work
+2024-06-04 14:17:37,610 - INFO - [1;32mI 113 power_work.c:43] OrinC is in 0, switching is 1.[0m
+2024-06-04 14:17:37,613 - INFO - [1;32mI 113 power_work.c:43] OrinA is in 0, switching is 1.[0m
+2024-06-04 14:17:37,616 - INFO - [1;32mI 113 power_work.c:43] OrinB is in 0, switching is 1.[0m
+2024-06-04 14:17:37,618 - INFO - [1;32mI 113 power_work.c:43] Ethernet is in 0, switching is 1.[0m
+2024-06-04 14:17:37,621 - INFO - [1;32mI 183 pca2131_work.c:93] RTC time is: 2001-1-1 0:0:0.62, wday:1.
+2024-06-04 14:17:37,622 - INFO - [0m
+2024-06-04 14:17:37,625 - INFO - [1;32mI 183 time_manage_work.c:66] Update System clock via BUILDSTAMP: 2024-06-03/02:30:28[0m
+2024-06-04 14:17:37,628 - INFO - [1;32mI 183 time_manage_work.c:76] Rtc init system clock done.[0m
+2024-06-04 14:17:37,632 - INFO - [1;32mI 626 group_power_control.c:174] Updated Ethernet power state: [1]:[2]---->[1][0m
+2024-06-04 14:17:37,635 - INFO - [1;32mI 626 group_power_control.c:253] Ethernet power state: [1][0m
+2024-06-04 14:17:37,637 - INFO - [1;32mI 626 network_work.c:61] Network up.[0m
+2024-06-04 14:17:37,639 - INFO - [1;32mI 637 network_work.c:88] Phys wait 10ms done.[0m
+2024-06-04 14:17:37,642 - INFO - [1;32mI 640 phy_aqr113c_driver.c:80] AQR113C turn to state kPhyInitState3[0m
+2024-06-04 14:17:37,644 - INFO - > [1;32mI 740 switch_common.c:1853] 0x1: Print error information
+2024-06-04 14:17:37,645 - INFO - [0m
+2024-06-04 14:17:37,647 - INFO - [1;32mI 740 switch_common.c:1845] Device ID     : 0xf13[0m
+2024-06-04 14:17:37,649 - INFO - [1;32mI 740 switch_common.c:1846] Base Reg Addr : 0x0[0m
+2024-06-04 14:17:37,652 - INFO - [1;32mI 740 switch_common.c:1847] No of Ports   : 12[0m
+2024-06-04 14:17:37,655 - INFO - [1;32mI 740 switch_common.c:1848] Driver has been started.[0m
+2024-06-04 14:17:37,657 - INFO - [1;32mI 741 switch_common.c:1853] 0x1: Print error information
+2024-06-04 14:17:37,658 - INFO - [0m
+2024-06-04 14:17:37,660 - INFO - [1;32mI 741 switch_common.c:1845] Device ID     : 0xf13[0m
+2024-06-04 14:17:37,662 - INFO - [1;32mI 741 switch_common.c:1846] Base Reg Addr : 0x0[0m
+2024-06-04 14:17:37,665 - INFO - [1;32mI 741 switch_common.c:1847] No of Ports   : 12[0m
+2024-06-04 14:17:37,667 - INFO - [1;32mI 741 switch_common.c:1848] Driver has been started.[0m
+2024-06-04 14:17:37,670 - INFO - > [1;32mI 791 phy_aqr113c_driver.c:86] AQR113C turn to state kPhyInitState4[0m
+2024-06-04 14:17:37,672 - INFO - > [1;32mI 1692 phy_aqr113c_driver.c:92] AQR113C turn to state kPhyInitState5[0m
+2024-06-04 14:17:37,675 - INFO - [1;32mI 1693 phy_aqr113c_driver.c:105] Start to init phy AQR113.[0m
+2024-06-04 14:17:37,677 - INFO - > [1;32mI 1760 phy_88ea1512.c:307] 88EA1512 set as RGMII mode.[0m
+2024-06-04 14:17:37,700 - INFO - > [1;32mI 1859 network_state_machine.c:225] 0-0-1-2-2[0m
+2024-06-04 14:17:37,702 - INFO - [1;32mI 1859 network_state_machine.c:225] 1-0-2-2-2[0m
+2024-06-04 14:17:37,704 - INFO - [1;32mI 1859 network_state_machine.c:225] 2-1-2-2-2[0m
+2024-06-04 14:17:37,706 - INFO - [1;32mI 1859 network_state_machine.c:225] 3-1-3-2-2[0m
+2024-06-04 14:17:37,708 - INFO - [1;32mI 1859 network_state_machine.c:225] 4-1-4-2-2[0m
+2024-06-04 14:17:37,710 - INFO - [1;32mI 1860 network_state_machine.c:225] 5-1-5-2-2[0m
+2024-06-04 14:17:37,712 - INFO - [1;32mI 1860 network_state_machine.c:225] 6-1-6-2-1[0m
+2024-06-04 14:17:37,714 - INFO - [1;32mI 1860 network_state_machine.c:235] phy1 sw2port6 100M[0m
+2024-06-04 14:17:37,741 - INFO - [1;32mI 1860 network_state_machine.c:225] 7-1-8-2-2[0m
+2024-06-04 14:17:37,743 - INFO - [1;32mI 1860 network_state_machine.c:279] USE VLAN:0(TO BE replace)[0m
+2024-06-04 14:17:37,747 - INFO - [1;32mI 1860 network_state_machine.c:183] Trying to delete all vlans for switch switch1.[0m
+2024-06-04 14:17:37,750 - INFO - [1;32mI 1860 network_state_machine.c:183] Trying to delete all vlans for switch switch2.[0m
+2024-06-04 14:17:37,753 - INFO - [1;32mI 1860 network_state_machine.c:196] Setting switch 0 ports configuration.[0m
+2024-06-04 14:17:37,756 - INFO - [1;32mI 1863 network_state_machine.c:149] Trying to add vlan nodes.[0m
+2024-06-04 14:17:37,784 - INFO - [1;32mI 1866 network_state_machine.c:196] Setting switch 1 ports configuration.[0m
+2024-06-04 14:17:37,787 - INFO - [1;32mI 1869 network_state_machine.c:149] Trying to add vlan nodes.[0m
+2024-06-04 14:17:37,788 - INFO - RMU feature is disabled.
+2024-06-04 14:17:37,789 - INFO - RMU feature is disabled.
+2024-06-04 14:17:37,792 - INFO - [1;32mI 1873 network_state_machine.c:294] Init extend switchs and phys done.[0m
+2024-06-04 14:17:37,796 - INFO - [1;32mI 1873 pony_tc39b_geth.c:587] PTP clock started. Initial frequency ratio: 1.999804735[0m
+2024-06-04 14:17:37,823 - INFO - [1;32mI 1873 network.c:68] IP: 192.168.1.64, Mask: 255.255.0.0, Gateway: 192.168.1.1.[0m
+2024-06-04 14:17:37,825 - INFO - [1;32mI 1874 router.c:102] Open the [1][0].[0m
+2024-06-04 14:17:37,827 - INFO - [1;32mI 1874 router.c:102] Open the [0][1].[0m
+2024-06-04 14:17:37,829 - INFO - [1;32mI 1874 router.c:102] Open the [6][0].[0m
+2024-06-04 14:17:37,831 - INFO - [1;32mI 1874 router.c:102] Open the [6][1].[0m
+2024-06-04 14:17:37,833 - INFO - [1;32mI 1874 router.c:102] Open the [2][0].[0m
+2024-06-04 14:17:37,836 - INFO - [1;32mI 1874 network_state_machine.c:369] Network initialization successful![0m
+2024-06-04 14:17:37,838 - INFO - [1;32mI 1875 time_state_machine.c:28] Network init done, ready to run sntp.[0m
+2024-06-04 14:17:37,850 - INFO - [1;32mI 1876 time_state_machine.c:39] sntp starts at: 1717381829693 ms.[0m
+2024-06-04 14:17:37,852 - INFO - [1;32mI 1876 sntp_client.c:57] Ready to start sntp client.[0m
+2024-06-04 14:17:37,855 - INFO - [1;32mI 1876 pony_sntp.c:392] SntpRequest: current server address is 39.108.170.188[0m
+2024-06-04 14:17:37,858 - INFO - [1;32mI 1876 systemtime.c:81] Get systemclock: 1717381829693000 us.[0m
+2024-06-04 14:17:37,860 - INFO - [1;32mI 1876 pony_sntp.c:406] Sent request to server.[0m
+2024-06-04 14:17:38,861 - INFO - >

@@ -1,0 +1,22 @@
+Starting iperf server on 192.168.1.103 at port 5205
+Results from 192.168.1.100 to 192.168.1.103:5205
+iperf3: error - the server has terminated
+Connecting to host 192.168.1.103, port 5205
+[  5] local 192.168.1.100 port 37593 connected to 192.168.1.103 port 5205
+[ ID] Interval           Transfer     Bitrate         Total Datagrams
+[  5]   0.00-1.00   sec   324 MBytes  2.71 Gbits/sec  237935  
+[  5]   1.00-2.00   sec   328 MBytes  2.75 Gbits/sec  241355  
+[  5]   2.00-3.00   sec   332 MBytes  2.78 Gbits/sec  243872  
+[  5]   3.00-4.00   sec   333 MBytes  2.79 Gbits/sec  244670  
+[  5]   4.00-5.00   sec   334 MBytes  2.80 Gbits/sec  245453  
+[  5]   5.00-6.00   sec   334 MBytes  2.80 Gbits/sec  245347  
+[  5]   6.00-7.00   sec   337 MBytes  2.82 Gbits/sec  247516  
+[  5]   7.00-8.00   sec   335 MBytes  2.81 Gbits/sec  246287  
+[  5]   8.00-9.00   sec   337 MBytes  2.83 Gbits/sec  248088  
+[  5]   9.00-10.00  sec   343 MBytes  2.88 Gbits/sec  252530  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-10.00  sec  3.26 GBytes  2.80 Gbits/sec  0.000 ms  0/2453053 (0%)  sender
+[  5]   0.00-10.00  sec  0.00 Bytes  0.00 bits/sec  0.000 ms  0/0 (0%)  receiver
+
+Killed iperf server on 192.168.1.103: 

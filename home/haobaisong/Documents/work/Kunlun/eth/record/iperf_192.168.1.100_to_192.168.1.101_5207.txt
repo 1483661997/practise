@@ -1,0 +1,23 @@
+Starting iperf server on 192.168.1.100 at port 5207
+Results from 192.168.1.101 to 192.168.1.100:5207
+Connecting to host 192.168.1.100, port 5207
+[  5] local 192.168.1.101 port 59258 connected to 192.168.1.100 port 5207
+[ ID] Interval           Transfer     Bitrate         Total Datagrams
+[  5]   0.00-1.00   sec   265 MBytes  2.22 Gbits/sec  194802  
+[  5]   1.00-2.00   sec   267 MBytes  2.24 Gbits/sec  196284  
+[  5]   2.00-3.00   sec   266 MBytes  2.23 Gbits/sec  195305  
+[  5]   3.00-4.00   sec   266 MBytes  2.23 Gbits/sec  195447  
+[  5]   4.00-5.00   sec   266 MBytes  2.23 Gbits/sec  195493  
+[  5]   5.00-6.00   sec   267 MBytes  2.24 Gbits/sec  196400  
+[  5]   6.00-7.00   sec   263 MBytes  2.21 Gbits/sec  193565  
+[  5]   7.00-8.00   sec   245 MBytes  2.06 Gbits/sec  180509  
+[  5]   8.00-9.00   sec   246 MBytes  2.06 Gbits/sec  180797  
+[  5]   9.00-10.00  sec   245 MBytes  2.05 Gbits/sec  179898  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+[  5]   0.00-10.00  sec  2.53 GBytes  2.18 Gbits/sec  0.000 ms  0/1908500 (0%)  sender
+[  5]   0.00-10.05  sec  1.23 GBytes  1.05 Gbits/sec  0.013 ms  971625/1900574 (51%)  receiver
+
+iperf Done.
+
+Killed iperf server on 192.168.1.100: 

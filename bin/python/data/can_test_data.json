@@ -1,0 +1,787 @@
+{
+    "can1_can4_dbw_test": [
+    {
+        "can_id": 1133,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 1000
+    },
+    {
+        "can_id": 1415,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 1000
+    },
+    {
+        "can_id": 1062,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 1000
+    },
+    {
+        "can_id": 1073,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 1000
+    },
+    {
+        "can_id": 1026,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 1000
+    },
+    {
+        "can_id": 1025,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 1000
+    },
+    {
+        "can_id": 497,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 1000
+    },
+        {
+        "can_id": 352,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 1000
+    },
+        {
+        "can_id": 353,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 1000
+    },
+        {
+        "can_id": 1413,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 1000
+    },
+        {
+        "can_id": 256,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 1000
+    },
+        {
+        "can_id": 1059,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 1000
+    },
+        {
+        "can_id": 1058,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 1000
+    },
+        {
+        "can_id": 1043,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 1000
+    },
+        {
+        "can_id": 1042,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 1000
+    },
+        {
+        "can_id": 288,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 1000
+    },
+        {
+        "can_id": 785,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 300
+    },
+        {
+        "can_id": 1424,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 100
+    },
+        {
+        "can_id": 15,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 100
+    },
+        {
+        "can_id": 1595,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 500
+    },
+        {
+        "can_id": 160,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 161,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 132,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 113,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 30
+    },
+        {
+        "can_id": 130,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 258,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 122,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 257,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 147,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 121,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 146,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 150,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 119,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 176,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 118,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 117,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 120,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 529,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 100
+    }
+    ],
+
+    "50pct_load_test": [
+        {
+        "can_id": 1133,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 600,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 1415,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 600,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 1062,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 600,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 1073,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 600,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 1026,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 600,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 1025,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 600,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 497,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 600,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 352,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 600,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 353,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 600,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 1413,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 600,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 256,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 600,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 1059,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 600,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 1058,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 600,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 1043,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 600,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 1042,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 600,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 288,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 600,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 785,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 600,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 1424,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 600,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 15,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 600,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 160,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 600,
+        "cycle_time": 10
+    }
+    ],
+
+    "5pct_load_test": [
+        {
+        "can_id": 117,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 3600,
+        "cycle_time": 20
+    },
+        {
+        "can_id": 118,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 3600,
+        "cycle_time": 20
+    },
+        {
+        "can_id": 119,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 3600,
+        "cycle_time": 20
+    },
+        {
+        "can_id": 120,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 3600,
+        "cycle_time": 20
+    }
+    ],
+
+    "filter_can1_test": [
+        {
+        "can_id": 1057,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 10,
+        "cycle_time": 20
+    },
+        {
+        "can_id": 1056,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 10,
+        "cycle_time": 20
+    },
+        {
+        "can_id": 1072,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 10,
+        "cycle_time": 20
+    },
+        {
+        "can_id": 1061,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 10,
+        "cycle_time": 20
+    }
+    ],
+
+    "can1_can4_12h_test":  [
+    {
+        "can_id": 1133,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 1000
+    },
+    {
+        "can_id": 1415,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 1000
+    },
+    {
+        "can_id": 1062,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 1000
+    },
+    {
+        "can_id": 1073,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 1000
+    },
+    {
+        "can_id": 1026,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 1000
+    },
+    {
+        "can_id": 1025,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 1000
+    },
+    {
+        "can_id": 497,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 1000
+    },
+        {
+        "can_id": 352,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 1000
+    },
+        {
+        "can_id": 353,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 1000
+    },
+        {
+        "can_id": 1413,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 1000
+    },
+        {
+        "can_id": 256,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 1000
+    },
+        {
+        "can_id": 1059,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 1000
+    },
+        {
+        "can_id": 1058,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 1000
+    },
+        {
+        "can_id": 1043,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 1000
+    },
+        {
+        "can_id": 1042,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 1000
+    },
+        {
+        "can_id": 288,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 1000
+    },
+        {
+        "can_id": 785,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 300
+    },
+        {
+        "can_id": 1424,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 100
+    },
+        {
+        "can_id": 15,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 100
+    },
+        {
+        "can_id": 1595,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 500
+    },
+        {
+        "can_id": 160,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 161,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 132,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 113,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 30
+    },
+        {
+        "can_id": 130,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 258,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 122,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 257,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 147,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 121,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 146,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 150,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 119,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 176,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 118,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 117,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 120,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 529,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 43200,
+        "cycle_time": 100
+    }
+    ],
+
+    "60pct_load_test": [
+        {
+        "can_id": 1133,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+    {
+        "can_id": 1415,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+    {
+        "can_id": 1062,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+    {
+        "can_id": 1073,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+    {
+        "can_id": 1026,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+    {
+        "can_id": 1025,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+    {
+        "can_id": 497,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 352,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 353,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 1413,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 256,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 1059,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 1058,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 1043,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 1042,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 288,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 785,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 1424,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 15,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 1595,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 160,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 161,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 132,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    },
+        {
+        "can_id": 113,
+        "message": [1,2,3,4,5,6,7,8],
+        "duration": 30,
+        "cycle_time": 10
+    }
+    ]
+}

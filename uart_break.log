@@ -1,0 +1,704 @@
+haobaisong@haobaisong-U-BJ6BN42:~/Documents/project/test$ /bin/python /home/haobaisong/Documents/project/test/src/python/main.py
+///////////////////////////////////////////////
+Connected to /dev/ttyCH9344USB0 at 115200 baud.
+version
+> 
+clover_main_mcu
+------------------------------
+FW Is: app
+FW Version: release_v2_clover-main-mcu_v0-3_RC13.B
+Buildstamp: 2024-06-03/02:30:28
+Githash: 23b4130bde9151fe969aaca050c962c21a910b1e
+------------------------------
+>
+****************升级前*************************
+The upgrade has finished :10%.2024-06-04 18:01:50,503 - INFO - 初始化VISA 资源...
+打开: ASRL::/dev/ttyUSB0::INSTR
+设置远程控制...
+发送命令: OUTP 0
+固件更新在 10% 打断.
+2024-06-04 18:01:53,746 - INFO - 初始化VISA 资源...
+打开: ASRL::/dev/ttyUSB0::INSTR
+设置远程控制...
+发送命令: OUTP 1
+****************升级后**************************
+Connected to /dev/ttyCH9344USB0 at 115200 baud.
+通信问题...: 'utf-8' codec can't decode byte 0xab in position 0: invalid start byte
+///////////////////////////////////////////////
+Connected to /dev/ttyCH9344USB0 at 115200 baud.
+version
+> 
+clover_main_mcu
+------------------------------
+FW Is: app
+FW Version: release_v2_clover-main-mcu_v0-3_RC13.B
+Buildstamp: 2024-06-03/02:30:28
+Githash: 23b4130bde9151fe969aaca050c962c21a910b1e
+------------------------------
+I 1692 phy_aqr113c_driver.c:92] AQR113C turn to state kPhyInitState5
+I 1693 phy_aqr113c_driver.c:105] Start to init phy AQR113.
+I 1760 phy_88ea1512.c:307] 88EA1512 set as RGMII mode.
+I 1859 network_state_machine.c:225] 0-0-1-2-2
+I 1859 network_state_machine.c:225] 1-0-2-2-2
+I 1859 network_state_machine.c:225] 2-1-2-2-2
+I 1859 network_state_machine.c:225] 3-1-3-2-2
+I 1859 network_state_machine.c:225] 4-1-4-2-2
+I 1860 network_state_machine.c:225] 5-1-5-2-2
+I 1860 network_state_machine.c:225] 6-1-6-2-1
+I 1860 network_state_machine.c:235] phy1 sw2port6 100M
+I 1860 network_state_machine.c:225] 7-1-8-2-2
+I 1860 network_state_machine.c:279] USE VLAN:0(TO BE replace)
+I 1860 network_state_machine.c:183] Trying to delete all vlans for switch switch1.
+I 1860 network_state_machine.c:183] Trying to delete all vlans for switch switch2.
+I 1860 network_state_machine.c:196] Setting switch 0 ports configuration.
+I 1863 network_state_machine.c:149] Trying to add vlan nodes.
+I 1866 network_state_machine.c:196] Setting switch 1 ports configuration.
+I 1869 network_state_machine.c:149] Trying to add vlan nodes.
+RMU feature is disabled.
+RMU feature is disabled.
+I 1873 network_state_machine.c:294] Init extend switchs and phys done.
+I 1873 pony_tc39b_geth.c:587] PTP clock started. Initial frequency ratio: 1.999804735
+I 1873 network.c:68] IP: 192.168.1.64, Mask: 255.255.0.0, Gateway: 192.168.1.1.
+I 1874 router.c:102] Open the [1][0].
+I 1874 router.c:102] Open the [0][1].
+I 1874 router.c:102] Open the [6][0].
+I 1874 router.c:102] Open the [6][1].
+I 1874 router.c:102] Open the [2][0].
+I 1874 network_state_machine.c:369] Network initialization successful!
+I 1875 time_state_machine.c:28] Network init done, ready to run sntp.
+I 1876 time_state_machine.c:39] sntp starts at: 1717381829693 ms.
+I 1876 sntp_client.c:57] Ready to start sntp client.
+I 1876 pony_sntp.c:392] SntpRequest: current server address is 39.108.170.188
+I 1876 systemtime.c:81] Get systemclock: 1717381829693000 us.
+I 1876 pony_sntp.c:406] Sent request to server.
+I 2049 systemtime.c:81] Get systemclock: 1717381829866000 us.
+I 2049 systemtime.c:69] Set systemclock at timestamp: 1717495316536625 us.
+I 2049 pony_sntp.c:362] SntpTimestampProcess: Tue Jun  4 10:01:56 2024
+, 536625
+I 2049 pony_sntp.c:279] Finished once timesync via sntp.
+I 2050 time_state_machine.c:44] sntp sync system clock successful!
+I 2050 sntp_client.c:63] Ready to stop sntp client.
+I 2051 automotive_master.c:393] Finished update hw_clock.
+I 2051 time_state_machine.c:68] System clock sync phc once done.
+I 2052 pps_rmc_module.c:180] Utc transmit function registered.
+I 2052 pps_rmc_module.c:173] Init pps generator finished.
+I 2052 time_state_machine.c:86] Mcu phc initialization successful!
+>
+****************升级前*************************
+The upgrade has finished :30%.2024-06-04 18:02:12,256 - INFO - 初始化VISA 资源...
+打开: ASRL::/dev/ttyUSB0::INSTR
+设置远程控制...
+发送命令: OUTP 0
+固件更新在 30% 打断.
+2024-06-04 18:02:15,496 - INFO - 初始化VISA 资源...
+打开: ASRL::/dev/ttyUSB0::INSTR
+设置远程控制...
+发送命令: OUTP 1
+****************升级后**************************
+Connected to /dev/ttyCH9344USB0 at 115200 baud.
+通信问题...: 'utf-8' codec can't decode byte 0xab in position 0: invalid start byte
+///////////////////////////////////////////////
+Connected to /dev/ttyCH9344USB0 at 115200 baud.
+version
+> 
+clover_main_mcu
+------------------------------
+FW Is: app
+FW Version: release_v2_clover-main-mcu_v0-3_RC13.B
+Buildstamp: 2024-06-03/02:30:28
+Githash: 23b4130bde9151fe969aaca050c962c21a910b1e
+------------------------------
+I 1833 phy_aqr113c_driver.c:92] AQR113C turn to state kPhyInitState5
+I 1834 phy_aqr113c_driver.c:105] Start to init phy AQR113.
+I 1901 phy_88ea1512.c:307] 88EA1512 set as RGMII mode.
+I 2000 network_state_machine.c:225] 0-0-1-2-2
+I 2000 network_state_machine.c:225] 1-0-2-2-2
+I 2000 network_state_machine.c:225] 2-1-2-2-2
+I 2001 network_state_machine.c:225] 3-1-3-2-2
+I 2001 network_state_machine.c:225] 4-1-4-2-2
+I 2001 network_state_machine.c:225] 5-1-5-2-2
+I 2001 network_state_machine.c:225] 6-1-6-2-1
+I 2001 network_state_machine.c:235] phy1 sw2port6 100M
+I 2001 network_state_machine.c:225] 7-1-8-2-2
+I 2001 network_state_machine.c:279] USE VLAN:0(TO BE replace)
+I 2001 network_state_machine.c:183] Trying to delete all vlans for switch switch1.
+I 2001 network_state_machine.c:183] Trying to delete all vlans for switch switch2.
+I 2001 network_state_machine.c:196] Setting switch 0 ports configuration.
+I 2004 network_state_machine.c:149] Trying to add vlan nodes.
+I 2007 network_state_machine.c:196] Setting switch 1 ports configuration.
+I 2010 network_state_machine.c:149] Trying to add vlan nodes.
+RMU feature is disabled.
+RMU feature is disabled.
+I 2014 network_state_machine.c:294] Init extend switchs and phys done.
+I 2014 pony_tc39b_geth.c:587] PTP clock started. Initial frequency ratio: 1.999804735
+I 2014 network.c:68] IP: 192.168.1.64, Mask: 255.255.0.0, Gateway: 192.168.1.1.
+I 2015 router.c:102] Open the [1][0].
+I 2015 router.c:102] Open the [0][1].
+I 2015 router.c:102] Open the [6][0].
+I 2015 router.c:102] Open the [6][1].
+I 2015 router.c:102] Open the [2][0].
+I 2015 network_state_machine.c:369] Network initialization successful!
+I 2016 time_state_machine.c:28] Network init done, ready to run sntp.
+I 2017 time_state_machine.c:39] sntp starts at: 1717381829693 ms.
+I 2017 sntp_client.c:57] Ready to start sntp client.
+I 2017 pony_sntp.c:392] SntpRequest: current server address is 39.108.170.188
+I 2017 systemtime.c:81] Get systemclock: 1717381829693000 us.
+I 2017 pony_sntp.c:406] Sent request to server.
+I 2403 systemtime.c:81] Get systemclock: 1717381830079000 us.
+I 2404 systemtime.c:69] Set systemclock at timestamp: 1717495338757721 us.
+I 2404 pony_sntp.c:362] SntpTimestampProcess: Tue Jun  4 10:02:18 2024
+, 757721
+I 2404 pony_sntp.c:279] Finished once timesync via sntp.
+I 2404 time_state_machine.c:44] sntp sync system clock successful!
+I 2404 sntp_client.c:63] Ready to stop sntp client.
+I 2405 automotive_master.c:393] Finished update hw_clock.
+I 2405 time_state_machine.c:68] System clock sync phc once done.
+I 2406 pps_rmc_module.c:180] Utc transmit function registered.
+I 2406 pps_rmc_module.c:173] Init pps generator finished.
+I 2406 time_state_machine.c:86] Mcu phc initialization successful!
+>
+****************升级前*************************
+The upgrade has finished :50%.2024-06-04 18:02:41,922 - INFO - 初始化VISA 资源...
+打开: ASRL::/dev/ttyUSB0::INSTR
+设置远程控制...
+发送命令: OUTP 0
+固件更新在 50% 打断.
+2024-06-04 18:02:45,169 - INFO - 初始化VISA 资源...
+打开: ASRL::/dev/ttyUSB0::INSTR
+设置远程控制...
+发送命令: OUTP 1
+****************升级后**************************
+Connected to /dev/ttyCH9344USB0 at 115200 baud.
+通信问题...: 'utf-8' codec can't decode byte 0xaf in position 0: invalid start byte
+///////////////////////////////////////////////
+Connected to /dev/ttyCH9344USB0 at 115200 baud.
+version
+> 
+clover_main_mcu
+------------------------------
+FW Is: app
+FW Version: release_v2_clover-main-mcu_v0-3_RC13.B
+Buildstamp: 2024-06-03/02:30:28
+Githash: 23b4130bde9151fe969aaca050c962c21a910b1e
+------------------------------
+I 1693 phy_aqr113c_driver.c:92] AQR113C turn to state kPhyInitState5
+I 1694 phy_aqr113c_driver.c:105] Start to init phy AQR113.
+I 1761 phy_88ea1512.c:307] 88EA1512 set as RGMII mode.
+I 1860 network_state_machine.c:225] 0-0-1-2-2
+I 1860 network_state_machine.c:225] 1-0-2-2-2
+I 1860 network_state_machine.c:225] 2-1-2-2-2
+I 1860 network_state_machine.c:225] 3-1-3-2-2
+I 1860 network_state_machine.c:225] 4-1-4-2-2
+I 1861 network_state_machine.c:225] 5-1-5-2-2
+I 1861 network_state_machine.c:225] 6-1-6-2-1
+I 1861 network_state_machine.c:235] phy1 sw2port6 100M
+I 1861 network_state_machine.c:225] 7-1-8-2-2
+I 1861 network_state_machine.c:279] USE VLAN:0(TO BE replace)
+I 1861 network_state_machine.c:183] Trying to delete all vlans for switch switch1.
+I 1861 network_state_machine.c:183] Trying to delete all vlans for switch switch2.
+I 1861 network_state_machine.c:196] Setting switch 0 ports configuration.
+I 1864 network_state_machine.c:149] Trying to add vlan nodes.
+I 1867 network_state_machine.c:196] Setting switch 1 ports configuration.
+I 1870 network_state_machine.c:149] Trying to add vlan nodes.
+RMU feature is disabled.
+RMU feature is disabled.
+I 1874 network_state_machine.c:294] Init extend switchs and phys done.
+I 1874 pony_tc39b_geth.c:587] PTP clock started. Initial frequency ratio: 1.999804735
+I 1874 network.c:68] IP: 192.168.1.64, Mask: 255.255.0.0, Gateway: 192.168.1.1.
+I 1875 router.c:102] Open the [1][0].
+I 1875 router.c:102] Open the [0][1].
+I 1875 router.c:102] Open the [6][0].
+I 1875 router.c:102] Open the [6][1].
+I 1875 router.c:102] Open the [2][0].
+I 1875 network_state_machine.c:369] Network initialization successful!
+I 1876 time_state_machine.c:28] Network init done, ready to run sntp.
+I 1877 time_state_machine.c:39] sntp starts at: 1717381829694 ms.
+I 1877 sntp_client.c:57] Ready to start sntp client.
+I 1877 pony_sntp.c:392] SntpRequest: current server address is 39.108.170.188
+I 1877 systemtime.c:81] Get systemclock: 1717381829694000 us.
+I 1877 pony_sntp.c:406] Sent request to server.
+I 2191 systemtime.c:81] Get systemclock: 1717381830008000 us.
+I 2191 systemtime.c:69] Set systemclock at timestamp: 1717495368227133 us.
+I 2192 pony_sntp.c:362] SntpTimestampProcess: Tue Jun  4 10:02:48 2024
+, 227133
+I 2192 pony_sntp.c:279] Finished once timesync via sntp.
+I 2192 time_state_machine.c:44] sntp sync system clock successful!
+I 2192 sntp_client.c:63] Ready to stop sntp client.
+I 2193 automotive_master.c:393] Finished update hw_clock.
+I 2193 time_state_machine.c:68] System clock sync phc once done.
+I 2194 pps_rmc_module.c:180] Utc transmit function registered.
+I 2194 pps_rmc_module.c:173] Init pps generator finished.
+I 2194 time_state_machine.c:86] Mcu phc initialization successful!
+>
+****************升级前*************************
+The upgrade has finished :70%.2024-06-04 18:03:19,253 - INFO - 初始化VISA 资源...
+打开: ASRL::/dev/ttyUSB0::INSTR
+设置远程控制...
+发送命令: OUTP 0
+固件更新在 70% 打断.
+2024-06-04 18:03:22,467 - INFO - 初始化VISA 资源...
+打开: ASRL::/dev/ttyUSB0::INSTR
+设置远程控制...
+发送命令: OUTP 1
+****************升级后**************************
+Connected to /dev/ttyCH9344USB0 at 115200 baud.
+Clover Main MCU loader!
+I 0 router.c:98] Open the [1][0].
+I 0 router.c:98] Open the [0][1].
+I 1 tlf35584_manager.c:113] Tlf35584 init done.
+I 1 tlf35584_manager.c:147] Tlf35584 is in normal state.
+I 1 can.c:88] Tja1145 global event val is 0x1.
+I 1 can.c:100] Tja1145 global event val modify to 0x0.
+I 1 can.c:88] Tja1145 global event val is 0x1.
+I 2 can.c:100] Tja1145 global event val modify to 0x0.
+I 2 can.c:126] Add virtual CAN.
+I 2 can.c:128] Can init done.
+I 37 boot_control_ab.c:357] Stored actvie slot B is marked successful.
+I 37 ab_upgrade_loader_work.c:180] Now active slot is B, start verifying.
+I 55 ab_upgrade_loader_work.c:204] Start to verify app, bank num is 12.
+> I 7 pony_tc39b_gpio.c:159] attatch irq, pin = 2009
+I 7 pps_rmc_module.c:78] Init pps capture pin finished.
+I 7 can.c:122] Tja1145 global event val modify to 0x0.
+I 7 can.c:122] Tja1145 global event val modify to 0x0.
+I 11 can.c:152] Add virtual CAN.
+I 11 can.c:154] Can init done.
+I 11 sntp.c:49] Init sntp client okay.
+I 11 bootchain.c:609] Trying to boot chain once.
+E 11 bootchain.c:105] Slot info 1 is not bootable!
+E 11 bootchain.c:105] Slot info 2 is not bootable!
+E 11 bootchain.c:105] Slot info 4 is not bootable!
+E 11 bootchain.c:105] Slot info 5 is not bootable!
+E 11 bootchain.c:105] Slot info 7 is not bootable!
+E 12 bootchain.c:105] Slot info 8 is not bootable!
+I 12 bootchain.c:93] Write active info0 to 0xaf0f9000.
+I 47 bootchain.c:411] Current Boot chain active info index is 0.
+I 47 bootchain.c:135] Set OrinA to SlotA!
+I 47 bootchain.c:138] Set OrinB to SlotA!
+I 48 bootchain.c:141] Set OrinC to SlotA!
+I 48 bootchain.c:199] Init boot chain result is 0.
+I 48 bootchain.c:200] Is current active info wait verify: 1
+------------------------------------------- Active Info List ----------------------------------------------
+| Active Info | update counter | update time | update status | boot retry | valid | device 0  | device 1  | device 2  |
+-----------------------------------------------------------------------------------------------------------
+|0            |1               |0            |3              |0           |1      |0x0        |0x0        |0x0        |
+-----------------------------------------------------------------------------------------------------------
+|1            |0               |0            |0              |0           |0      |0x0        |0x0        |0x0        |
+-----------------------------------------------------------------------------------------------------------
+----------------------------- Slot Info List ------------------------------------
+| Slot Info | update counter | update time | bootable | boot successful | valid |
+---------------------------------------------------------------------------------
+|0          |191             |0            |c3        |ff               |1      |
+|1          |0               |0            |0         |0                |0      |
+|2          |0               |0            |0         |0                |0      |
+|3          |191             |0            |c3        |ff               |1      |
+|4          |0               |0            |0         |0                |0      |
+|5          |0               |0            |0         |0                |0      |
+|6          |191             |0            |c3        |ff               |1      |
+|7          |0               |0            |0         |0                |0      |
+|8          |0               |0            |0         |0                |0      |
+I 49 tlf35584_q.c:96] Tlf35584 is in normal state.
+I 49 switch_flash.c:305] Switch flash status register is 0x40.
+I 49 config.c:203] size:1-4-6-4-4-1-60-394-4-84
+I 49 config.c:215] count:7-5-4
+I 54 network_state_machine.c:309] read 2 2 phy 0 speed:1000 role:1
+I 54 network_state_machine.c:309] read 2 2 phy 1 speed:1000 role:1
+I 54 network_state_machine.c:309] read 2 2 phy 2 speed:1000 role:1
+I 54 network_state_machine.c:309] read 2 2 phy 3 speed:1000 role:1
+I 54 network_state_machine.c:309] read 2 2 phy 4 speed:1000 role:1
+I 54 network_state_machine.c:309] read 2 2 phy 5 speed:1000 role:1
+I 54 network_state_machine.c:309] read 1 2 phy 6 speed:100 role:1
+I 54 network_state_machine.c:309] read 2 2 phy 7 speed:1000 role:1
+I 54 network_state_machine.c:322] readb 2 2 phy 10 speed:1000 role:1
+I 54 network_state_machine.c:322] readb 2 2 phy 11 speed:1000 role:1
+I 54 network_state_machine.c:322] readb 2 2 phy 12 speed:1000 role:1
+I 55 network_state_machine.c:322] readb 2 2 phy 13 speed:1000 role:1
+Config manager 0 data space is 01018:
+------------------------------------------------
+ITEM               NAME|      LENGTH      OFFSET
+------------------------------------------------
+0              index|         1           0
+1                 ip|         4           1
+3            gateway|         4           5
+4       network_mask|         4           9
+5           use_vlan|         1          13
+7        switch_port|        60          14
+8         vlan_table|       394          74
+Config manager 1 data space is 01018:
+------------------------------------------------
+ITEM               NAME|      LENGTH      OFFSET
+------------------------------------------------
+6         phy_config|        84           0
+0              index|         1          84
+7        switch_port|        60          85
+8         vlan_table|       394         145
+13        mcu_por_cnt|         4         539
+Config manager 2 data space is 0250:
+------------------------------------------------
+ITEM               NAME|      LENGTH      OFFSET
+------------------------------------------------
+2                mac|         6           0
+12          remote_ip|         4           6
+10         switch_fw1|        32          10
+11         switch_fw2|        32          42
+remote_ip: 192:168:1:100
+I 55 config.c:467] Main MCU power cycle 11!
+I 97 power.c:85] Try to find wake source!
+I 102 adc_monitor.c:113] Adc item name: kRtcTlfWakeAdc, Adc value: 51
+E 102 adc_monitor.c:119] ADC: kRtcTlfWakeAdc is too Low
+I 107 adc_monitor.c:113] Adc item name: kAurixMVeWakein1Adc, Adc value: 12129
+E 107 adc_monitor.c:115] ADC: kAurixMVeWakein1Adc is too High
+I 107 power.c:97] can 1 wake 0
+I 107 power.c:97] can 2 wake 0
+I 107 power.c:102] Power status check
+I 112 adc_monitor.c:113] Adc item name: kKl30In1Flt, Adc value: 15938
+I 112 tlf35584_q.c:134] The voltage current and temperature of TLF35584 is normal.
+start to init power control module
+I 112 control.c:162] Next will be to toggle adcu power state: [0]---->[1]
+add power control work node
+< Greetings from Clover Aurix M! >
+< Release type is PROD >
+\     _^^
+\  _- oo\
+\----- \______
+\       )\
+||-----|| \
+||     ||
+clover_main_mcu
+------------------------------
+FW Is: app
+FW Version: release_v2_clover-main-mcu_v0-3_RC13.B
+Buildstamp: 2024-06-03/02:30:28
+Githash: 23b4130bde9151fe969aaca050c962c21a910b1e
+------------------------------
+I 113 cpu0_main.c:70] Starting Clover AURIX M.
+I 113 control.c:113] Updated adcu power state[0]---->[1]
+E 113 power_work.c:67] Wake not detected! Proceed to standby status!
+start to power to normal anyway
+I 113 power.c:77] To Normal:Pull up AURIXM_VBAT1_PWR_EN first.
+I 113 control.c:162] Next will be to toggle adcu power state: [1]---->[2]
+I 113 group_power_control.c:166] Next will be to toggle OrinC power state: [1]:[2]---->[1]
+I 113 group_power_control.c:166] Next will be to toggle OrinA power state: [1]:[2]---->[1]
+I 113 group_power_control.c:166] Next will be to toggle OrinB power state: [1]:[2]---->[1]
+I 113 group_power_control.c:166] Next will be to toggle Ethernet power state: [1]:[2]---->[1]
+pet dog work
+I 113 power_work.c:43] OrinC is in 0, switching is 1.
+I 113 power_work.c:43] OrinA is in 0, switching is 1.
+I 113 power_work.c:43] OrinB is in 0, switching is 1.
+I 113 power_work.c:43] Ethernet is in 0, switching is 1.
+I 183 pca2131_work.c:93] RTC time is: 2001-1-1 0:0:0.62, wday:1.
+
+I 183 time_manage_work.c:66] Update System clock via BUILDSTAMP: 2024-06-03/02:30:28
+I 183 time_manage_work.c:76] Rtc init system clock done.
+I 626 group_power_control.c:174] Updated Ethernet power state: [1]:[2]---->[1]
+I 626 group_power_control.c:253] Ethernet power state: [1]
+I 626 network_work.c:61] Network up.
+I 637 network_work.c:88] Phys wait 10ms done.
+I 640 phy_aqr113c_driver.c:80] AQR113C turn to state kPhyInitState3
+I 740 switch_common.c:1853] 0x1: Print error information
+
+I 740 switch_common.c:1845] Device ID     : 0xf13
+I 740 switch_common.c:1846] Base Reg Addr : 0x0
+I 740 switch_common.c:1847] No of Ports   : 12
+I 740 switch_common.c:1848] Driver has been started.
+I 741 switch_common.c:1853] 0x1: Print error information
+
+I 741 switch_common.c:1845] Device ID     : 0xf13
+I 741 switch_common.c:1846] Base Reg Addr : 0x0
+I 741 switch_common.c:1847] No of Ports   : 12
+I 741 switch_common.c:1848] Driver has been started.
+I 791 phy_aqr113c_driver.c:86] AQR113C turn to state kPhyInitState4
+I 1692 phy_aqr113c_driver.c:92] AQR113C turn to state kPhyInitState5
+I 1693 phy_aqr113c_driver.c:105] Start to init phy AQR113.
+I 1760 phy_88ea1512.c:307] 88EA1512 set as RGMII mode.
+I 1859 network_state_machine.c:225] 0-0-1-2-2
+I 1859 network_state_machine.c:225] 1-0-2-2-2
+I 1859 network_state_machine.c:225] 2-1-2-2-2
+I 1860 network_state_machine.c:225] 3-1-3-2-2
+I 1860 network_state_machine.c:225] 4-1-4-2-2
+I 1860 network_state_machine.c:225] 5-1-5-2-2
+I 1860 network_state_machine.c:225] 6-1-6-2-1
+I 1860 network_state_machine.c:235] phy1 sw2port6 100M
+I 1860 network_state_machine.c:225] 7-1-8-2-2
+I 1860 network_state_machine.c:279] USE VLAN:0(TO BE replace)
+I 1860 network_state_machine.c:183] Trying to delete all vlans for switch switch1.
+I 1860 network_state_machine.c:183] Trying to delete all vlans for switch switch2.
+I 1860 network_state_machine.c:196] Setting switch 0 ports configuration.
+I 1863 network_state_machine.c:149] Trying to add vlan nodes.
+I 1866 network_state_machine.c:196] Setting switch 1 ports configuration.
+I 1869 network_state_machine.c:149] Trying to add vlan nodes.
+RMU feature is disabled.
+RMU feature is disabled.
+I 1873 network_state_machine.c:294] Init extend switchs and phys done.
+I 1873 pony_tc39b_geth.c:587] PTP clock started. Initial frequency ratio: 1.999804735
+I 1873 network.c:68] IP: 192.168.1.64, Mask: 255.255.0.0, Gateway: 192.168.1.1.
+I 1874 router.c:102] Open the [1][0].
+I 1874 router.c:102] Open the [0][1].
+I 1874 router.c:102] Open the [6][0].
+I 1874 router.c:102] Open the [6][1].
+I 1874 router.c:102] Open the [2][0].
+I 1874 network_state_machine.c:369] Network initialization successful!
+I 1875 time_state_machine.c:28] Network init done, ready to run sntp.
+I 1876 time_state_machine.c:39] sntp starts at: 1717381829693 ms.
+I 1876 sntp_client.c:57] Ready to start sntp client.
+I 1876 pony_sntp.c:392] SntpRequest: current server address is 39.108.170.188
+I 1876 systemtime.c:81] Get systemclock: 1717381829693000 us.
+I 1876 pony_sntp.c:406] Sent request to server.
+I 2231 systemtime.c:81] Get systemclock: 1717381830048000 us.
+I 2231 systemtime.c:69] Set systemclock at timestamp: 1717495405497887 us.
+I 2231 pony_sntp.c:362] SntpTimestampProcess: Tue Jun  4 10:03:25 2024
+, 497887
+I 2231 pony_sntp.c:279] Finished once timesync via sntp.
+I 2232 time_state_machine.c:44] sntp sync system clock successful!
+I 2232 sntp_client.c:63] Ready to stop sntp client.
+I 2233 automotive_master.c:393] Finished update hw_clock.
+I 2233 time_state_machine.c:68] System clock sync phc once done.
+I 2234 pps_rmc_module.c:180] Utc transmit function registered.
+I 2234 pps_rmc_module.c:173] Init pps generator finished.
+I 2234 time_state_machine.c:86] Mcu phc initialization successful!
+>
+///////////////////////////////////////////////
+Connected to /dev/ttyCH9344USB0 at 115200 baud.
+version
+> 
+clover_main_mcu
+------------------------------
+FW Is: app
+FW Version: release_v2_clover-main-mcu_v0-3_RC13.B
+Buildstamp: 2024-06-03/02:30:28
+Githash: 23b4130bde9151fe969aaca050c962c21a910b1e
+------------------------------
+I 5167 group_power_control.c:174] Updated OrinC power state: [1]:[2]---->[1]
+I 5167 group_power_control.c:253] OrinC power state: [1]
+I 5189 group_power_control.c:174] Updated OrinA power state: [1]:[2]---->[1]
+I 5189 group_power_control.c:253] OrinA power state: [1]
+I 5211 group_power_control.c:174] Updated OrinB power state: [1]:[2]---->[1]
+I 5211 group_power_control.c:253] OrinB power state: [1]
+I 5212 control.c:113] Updated adcu power state[1]---->[2]
+>
+****************升级前*************************
+The upgrade has finished :90%.2024-06-04 18:04:05,867 - INFO - 初始化VISA 资源...
+打开: ASRL::/dev/ttyUSB0::INSTR
+设置远程控制...
+发送命令: OUTP 0
+固件更新在 90% 打断.
+2024-06-04 18:04:09,044 - INFO - 初始化VISA 资源...
+打开: ASRL::/dev/ttyUSB0::INSTR
+设置远程控制...
+发送命令: OUTP 1
+****************升级后**************************
+Connected to /dev/ttyCH9344USB0 at 115200 baud.
+Clover Main MCU loader!
+I 0 router.c:98] Open the [1][0].
+I 0 router.c:98] Open the [0][1].
+I 1 tlf35584_manager.c:113] Tlf35584 init done.
+I 1 tlf35584_manager.c:147] Tlf35584 is in normal state.
+I 1 can.c:88] Tja1145 global event val is 0x1.
+I 1 can.c:100] Tja1145 global event val modify to 0x0.
+I 1 can.c:88] Tja1145 global event val is 0x1.
+I 2 can.c:100] Tja1145 global event val modify to 0x0.
+I 2 can.c:126] Add virtual CAN.
+I 2 can.c:128] Can init done.
+I 37 boot_control_ab.c:357] Stored actvie slot B is marked successful.
+I 37 ab_upgrade_loader_work.c:180] Now active slot is B, start verifying.
+I 37 ab_upgrade_loader_work.c:204] Start to verify app, bank num is 12.
+> I 7 pony_tc39b_gpio.c:159] attatch irq, pin = 2009
+I 7 pps_rmc_module.c:78] Init pps capture pin finished.
+I 7 can.c:122] Tja1145 global event val modify to 0x0.
+I 7 can.c:122] Tja1145 global event val modify to 0x0.
+I 11 can.c:152] Add virtual CAN.
+I 11 can.c:154] Can init done.
+I 11 sntp.c:49] Init sntp client okay.
+I 11 bootchain.c:609] Trying to boot chain once.
+E 11 bootchain.c:105] Slot info 1 is not bootable!
+E 11 bootchain.c:105] Slot info 2 is not bootable!
+E 11 bootchain.c:105] Slot info 4 is not bootable!
+E 11 bootchain.c:105] Slot info 5 is not bootable!
+E 11 bootchain.c:105] Slot info 7 is not bootable!
+E 12 bootchain.c:105] Slot info 8 is not bootable!
+E 12 bootchain.c:673] Start to boot from the default slot infos!
+I 12 bootchain.c:341] Set device 0 to slot type 0.
+I 12 bootchain.c:135] Write OrinA SlotA info to 0xaf0f7000.
+I 47 bootchain.c:341] Set device 1 to slot type 0.
+I 47 bootchain.c:138] Write OrinB SlotA info to 0xaf0f4000.
+I 82 bootchain.c:341] Set device 2 to slot type 0.
+I 82 bootchain.c:141] Write OrinC SlotA info to 0xaf0f1000.
+I 117 bootchain.c:93] Write active info0 to 0xaf0f9000.
+I 12 bootchain.c:674] Set default boot chain result 0.
+
+I 152 bootchain.c:609] Trying to boot chain once.
+E 152 bootchain.c:105] Slot info 1 is not bootable!
+E 152 bootchain.c:105] Slot info 2 is not bootable!
+E 152 bootchain.c:105] Slot info 4 is not bootable!
+E 153 bootchain.c:105] Slot info 5 is not bootable!
+E 153 bootchain.c:105] Slot info 7 is not bootable!
+E 153 bootchain.c:105] Slot info 8 is not bootable!
+I 153 bootchain.c:93] Write active info0 to 0xaf0f9000.
+I 188 bootchain.c:411] Current Boot chain active info index is 0.
+I 188 bootchain.c:135] Set OrinA to SlotA!
+I 188 bootchain.c:138] Set OrinB to SlotA!
+I 189 bootchain.c:141] Set OrinC to SlotA!
+I 189 bootchain.c:199] Init boot chain result is 0.
+I 189 bootchain.c:200] Is current active info wait verify: 1
+------------------------------------------- Active Info List ----------------------------------------------
+| Active Info | update counter | update time | update status | boot retry | valid | device 0  | device 1  | device 2  |
+-----------------------------------------------------------------------------------------------------------
+|0            |1               |0            |3              |2           |1      |0x0        |0x0        |0x0        |
+-----------------------------------------------------------------------------------------------------------
+|1            |0               |0            |0              |0           |0      |0x0        |0x0        |0x0        |
+-----------------------------------------------------------------------------------------------------------
+----------------------------- Slot Info List ------------------------------------
+| Slot Info | update counter | update time | bootable | boot successful | valid |
+---------------------------------------------------------------------------------
+|0          |192             |0            |c3        |ff               |1      |
+|1          |0               |0            |0         |0                |0      |
+|2          |0               |0            |0         |0                |0      |
+|3          |192             |0            |c3        |ff               |1      |
+|4          |0               |0            |0         |0                |0      |
+|5          |0               |0            |0         |0                |0      |
+|6          |192             |0            |c3        |ff               |1      |
+|7          |0               |0            |0         |0                |0      |
+|8          |0               |0            |0         |0                |0      |
+I 190 tlf35584_q.c:96] Tlf35584 is in normal state.
+I 190 switch_flash.c:305] Switch flash status register is 0x40.
+I 190 config.c:203] size:1-4-6-4-4-1-60-394-4-84
+I 191 config.c:215] count:7-5-4
+I 195 network_state_machine.c:309] read 2 2 phy 0 speed:1000 role:1
+I 195 network_state_machine.c:309] read 2 2 phy 1 speed:1000 role:1
+I 195 network_state_machine.c:309] read 2 2 phy 2 speed:1000 role:1
+I 195 network_state_machine.c:309] read 2 2 phy 3 speed:1000 role:1
+I 195 network_state_machine.c:309] read 2 2 phy 4 speed:1000 role:1
+I 195 network_state_machine.c:309] read 2 2 phy 5 speed:1000 role:1
+I 195 network_state_machine.c:309] read 1 2 phy 6 speed:100 role:1
+I 195 network_state_machine.c:309] read 2 2 phy 7 speed:1000 role:1
+I 195 network_state_machine.c:322] readb 2 2 phy 10 speed:1000 role:1
+I 195 network_state_machine.c:322] readb 2 2 phy 11 speed:1000 role:1
+I 196 network_state_machine.c:322] readb 2 2 phy 12 speed:1000 role:1
+I 196 network_state_machine.c:322] readb 2 2 phy 13 speed:1000 role:1
+Config manager 0 data space is 01018:
+------------------------------------------------
+ITEM               NAME|      LENGTH      OFFSET
+------------------------------------------------
+0              index|         1           0
+1                 ip|         4           1
+3            gateway|         4           5
+4       network_mask|         4           9
+5           use_vlan|         1          13
+7        switch_port|        60          14
+8         vlan_table|       394          74
+Config manager 1 data space is 01018:
+------------------------------------------------
+ITEM               NAME|      LENGTH      OFFSET
+------------------------------------------------
+6         phy_config|        84           0
+0              index|         1          84
+7        switch_port|        60          85
+8         vlan_table|       394         145
+13        mcu_por_cnt|         4         539
+Config manager 2 data space is 0250:
+------------------------------------------------
+ITEM               NAME|      LENGTH      OFFSET
+------------------------------------------------
+2                mac|         6           0
+12          remote_ip|         4           6
+10         switch_fw1|        32          10
+11         switch_fw2|        32          42
+remote_ip: 192:168:1:100
+I 196 config.c:467] Main MCU power cycle 12!
+I 238 power.c:85] Try to find wake source!
+I 243 adc_monitor.c:113] Adc item name: kRtcTlfWakeAdc, Adc value: 52
+E 243 adc_monitor.c:119] ADC: kRtcTlfWakeAdc is too Low
+I 248 adc_monitor.c:113] Adc item name: kAurixMVeWakein1Adc, Adc value: 12139
+E 248 adc_monitor.c:115] ADC: kAurixMVeWakein1Adc is too High
+I 248 power.c:97] can 1 wake 0
+I 248 power.c:97] can 2 wake 0
+I 248 power.c:102] Power status check
+I 253 adc_monitor.c:113] Adc item name: kKl30In1Flt, Adc value: 15938
+I 253 tlf35584_q.c:134] The voltage current and temperature of TLF35584 is normal.
+start to init power control module
+I 253 control.c:162] Next will be to toggle adcu power state: [0]---->[1]
+add power control work node
+< Greetings from Clover Aurix M! >
+< Release type is PROD >
+\     _^^
+\  _- oo\
+\----- \______
+\       )\
+||-----|| \
+||     ||
+clover_main_mcu
+------------------------------
+FW Is: app
+FW Version: release_v2_clover-main-mcu_v0-3_RC13.B
+Buildstamp: 2024-06-03/02:30:28
+Githash: 23b4130bde9151fe969aaca050c962c21a910b1e
+------------------------------
+I 254 cpu0_main.c:70] Starting Clover AURIX M.
+I 254 control.c:113] Updated adcu power state[0]---->[1]
+E 254 power_work.c:67] Wake not detected! Proceed to standby status!
+start to power to normal anyway
+I 254 power.c:77] To Normal:Pull up AURIXM_VBAT1_PWR_EN first.
+I 254 control.c:162] Next will be to toggle adcu power state: [1]---->[2]
+I 254 group_power_control.c:166] Next will be to toggle OrinC power state: [1]:[2]---->[1]
+I 254 group_power_control.c:166] Next will be to toggle OrinA power state: [1]:[2]---->[1]
+I 254 group_power_control.c:166] Next will be to toggle OrinB power state: [1]:[2]---->[1]
+I 254 group_power_control.c:166] Next will be to toggle Ethernet power state: [1]:[2]---->[1]
+pet dog work
+I 254 power_work.c:43] OrinC is in 0, switching is 1.
+I 254 power_work.c:43] OrinA is in 0, switching is 1.
+I 254 power_work.c:43] OrinB is in 0, switching is 1.
+I 254 power_work.c:43] Ethernet is in 0, switching is 1.
+I 324 pca2131_work.c:93] RTC time is: 2001-1-1 0:0:0.76, wday:1.
+
+I 324 time_manage_work.c:66] Update System clock via BUILDSTAMP: 2024-06-03/02:30:28
+I 324 time_manage_work.c:76] Rtc init system clock done.
+I 768 group_power_control.c:174] Updated Ethernet power state: [1]:[2]---->[1]
+I 768 group_power_control.c:253] Ethernet power state: [1]
+I 769 network_work.c:61] Network up.
+I 779 network_work.c:88] Phys wait 10ms done.
+I 782 phy_aqr113c_driver.c:80] AQR113C turn to state kPhyInitState3
+I 882 switch_common.c:1853] 0x1: Print error information
+
+I 882 switch_common.c:1845] Device ID     : 0xf13
+I 883 switch_common.c:1846] Base Reg Addr : 0x0
+I 883 switch_common.c:1847] No of Ports   : 12
+I 883 switch_common.c:1848] Driver has been started.
+I 883 switch_common.c:1853] 0x1: Print error information
+
+I 883 switch_common.c:1845] Device ID     : 0xf13
+I 883 switch_common.c:1846] Base Reg Addr : 0x0
+I 883 switch_common.c:1847] No of Ports   : 12
+I 883 switch_common.c:1848] Driver has been started.
+I 933 phy_aqr113c_driver.c:86] AQR113C turn to state kPhyInitState4
+I 1834 phy_aqr113c_driver.c:92] AQR113C turn to state kPhyInitState5
+I 1835 phy_aqr113c_driver.c:105] Start to init phy AQR113.
+I 1902 phy_88ea1512.c:307] 88EA1512 set as RGMII mode.
+I 2001 network_state_machine.c:225] 0-0-1-2-2
+I 2001 network_state_machine.c:225] 1-0-2-2-2
+I 2001 network_state_machine.c:225] 2-1-2-2-2
+I 2002 network_state_machine.c:225] 3-1-3-2-2
+I 2002 network_state_machine.c:225] 4-1-4-2-2
+I 2002 network_state_machine.c:225] 5-1-5-2-2
+I 2002 network_state_machine.c:225] 6-1-6-2-1
+I 2002 network_state_machine.c:235] phy1 sw2port6 100M
+I 2002 network_state_machine.c:225] 7-1-8-2-2
+I 2002 network_state_machine.c:279] USE VLAN:0(TO BE replace)
+I 2002 network_state_machine.c:183] Trying to delete all vlans for switch switch1.
+I 2002 network_state_machine.c:183] Trying to delete all vlans for switch switch2.
+I 2002 network_state_machine.c:196] Setting switch 0 ports configuration.
+I 2005 network_state_machine.c:149] Trying to add vlan nodes.
+///////////////////////////////////////////////
+Connected to /dev/ttyCH9344USB0 at 115200 baud.
+I 2008 network_state_machine.c:196] Setting switch 1 ports configuration.
+通信问题...: 'utf-8' codec can't decode byte 0x95 in position 6: invalid start byte
+****************升级前*************************
+The upgrade has finished :99%.2024-06-04 18:04:55,196 - INFO - 初始化VISA 资源...
+打开: ASRL::/dev/ttyUSB0::INSTR
+设置远程控制...
+发送命令: OUTP 0
+固件更新在 99% 打断.
+2024-06-04 18:04:58,448 - INFO - 初始化VISA 资源...
+打开: ASRL::/dev/ttyUSB0::INSTR
+设置远程控制...
+发送命令: OUTP 1
+****************升级后**************************
+Connected to /dev/ttyCH9344USB0 at 115200 baud.

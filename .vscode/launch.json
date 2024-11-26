@@ -1,0 +1,435 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "RemoveDuplicateLettersSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.String.RemoveDuplicateLettersSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "DataStruct.Test",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "TitleToNumberSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.String.TitleToNumberSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "ConvertToTitleSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.String.ConvertToTitleSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "RemoveCommentsSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.array.RemoveCommentsSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "IsNumberSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.regex.IsNumberSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "FourSumSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.array.FourSumSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "RomanToIntSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.String.RomanToIntSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "IntToRomanSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.String.IntToRomanSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "MyAtoiSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.String.MyAtoiSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "ReverseSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.array.ReverseSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "ConvertSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.String.ConvertSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "RepeatLimitedStringSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.Map.RepeatLimitedStringSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "longestSubarrayLimit",
+            "request": "launch",
+            "mainClass": "DataStruct.Window.longestSubarrayLimit",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "ValidIPAddressSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.String.ValidIPAddressSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "CanCrossSoution",
+            "request": "launch",
+            "mainClass": "DataStruct.Dp.CanCrossSoution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "MaximumGapSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.array.MaximumGapSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "MultiplySolution",
+            "request": "launch",
+            "mainClass": "DataStruct.String.MultiplySolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "IsMatchSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.regex.IsMatchSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "Client3",
+            "request": "launch",
+            "mainClass": "Test.Threads.Client3",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "WaitNotifyOrderExample",
+            "request": "launch",
+            "mainClass": "Test.Threads.WaitNotifyOrderExample",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "Client2",
+            "request": "launch",
+            "mainClass": "Test.Threads.Client2",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "Client",
+            "request": "launch",
+            "mainClass": "Test.Threads.Client",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "scheme.ObserverPattern.DrawHouseServiceObserver.Test",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "scheme.ObserverPattern.DrawHouseService.Test",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "Client",
+            "request": "launch",
+            "mainClass": "scheme.ObserverPattern.Client",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "TestHashMap",
+            "request": "launch",
+            "mainClass": "Test.TestHashMap",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "PivotIndexSolution",
+            "request": "launch",
+            "mainClass": "Prefix.PivotIndexSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "LongestSubarraySolution",
+            "request": "launch",
+            "mainClass": "Window.LongestSubarraySolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "LongestOnesSolution",
+            "request": "launch",
+            "mainClass": "Window.LongestOnesSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "MaxVowelsSolution",
+            "request": "launch",
+            "mainClass": "Window.MaxVowelsSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "MaxOperationsSolution",
+            "request": "launch",
+            "mainClass": "DoublePointer.MaxOperationsSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "NextPermutationSolution",
+            "request": "launch",
+            "mainClass": "skill.NextPermutationSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "MajorityElementSolution",
+            "request": "launch",
+            "mainClass": "skill.MajorityElementSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "LongestCommonSubsequenceSolution",
+            "request": "launch",
+            "mainClass": "Dps.LongestCommonSubsequenceSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "UniquePathsSolution",
+            "request": "launch",
+            "mainClass": "Dps.UniquePathsSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "LongestValidParenthesesSolution",
+            "request": "launch",
+            "mainClass": "Dp.LongestValidParenthesesSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "CanPartitionSolution",
+            "request": "launch",
+            "mainClass": "Dp.CanPartitionSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "PartitionLabelsSolution",
+            "request": "launch",
+            "mainClass": "Dp.PartitionLabelsSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "JumpSolution",
+            "request": "launch",
+            "mainClass": "Dp.JumpSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "CanJumpSolution",
+            "request": "launch",
+            "mainClass": "Dp.CanJumpSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "MaxProfitSolution",
+            "request": "launch",
+            "mainClass": "Dp.MaxProfitSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "TopKFrequentSolution",
+            "request": "launch",
+            "mainClass": "Map.TopKFrequentSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "LargestRectangleAreaSolution",
+            "request": "launch",
+            "mainClass": "Stack.LargestRectangleAreaSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "DecodeStringSolution",
+            "request": "launch",
+            "mainClass": "Stack.DecodeStringSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "SolveNQueenSolution",
+            "request": "launch",
+            "mainClass": "BackTrack.SolveNQueenSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "PartitionSolution",
+            "request": "launch",
+            "mainClass": "BackTrack.PartitionSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "SubsetsSolution",
+            "request": "launch",
+            "mainClass": "BackTrack.SubsetsSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "SearchMatrixSolution",
+            "request": "launch",
+            "mainClass": "matrix.SearchMatrixSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "ProductExceptSelfSolution",
+            "request": "launch",
+            "mainClass": "array.ProductExceptSelfSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "RrotateSolution",
+            "request": "launch",
+            "mainClass": "array.RrotateSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "SubarraySumSolution",
+            "request": "launch",
+            "mainClass": "SubString.SubarraySumSolution",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "type": "java",
+            "name": "letterCombinations",
+            "request": "launch",
+            "mainClass": "BackTrack.letterCombinations",
+            "projectName": "test_7c7267a4"
+        },
+        {
+            "name": "C/C++: gcc build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: gcc build active file",
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
+            "name": "C/C++: gcc-9 build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: gcc-9 build active file",
+            "miDebuggerPath": "/usr/bin/gdb"
+        }
+    ]
+}
