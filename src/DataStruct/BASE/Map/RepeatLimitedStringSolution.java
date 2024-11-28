@@ -1,4 +1,4 @@
-package DataStruct.Map;
+package DataStruct.BASE.Map;
 
 import java.util.*;
 

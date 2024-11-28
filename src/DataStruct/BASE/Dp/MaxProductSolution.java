@@ -1,4 +1,4 @@
-package DataStruct.Dp;
+package DataStruct.BASE.Dp;
 
 /*
  * 152. 乘积最大子数组

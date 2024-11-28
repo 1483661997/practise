@@ -1,4 +1,4 @@
-package DataStruct.KadaneAlogorithm1;
+package DataStruct.BASE.KadaneAlogorithm1;
 
 /*
  * 环形子数组的最大和

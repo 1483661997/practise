@@ -1,4 +1,4 @@
-package DataStruct.Dps;
+package DataStruct.BASE.Dps;
 
 /*
  * 最长回文子串

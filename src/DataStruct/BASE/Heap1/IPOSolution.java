@@ -1,4 +1,4 @@
-package DataStruct.Heap1;
+package DataStruct.BASE.Heap1;
 
 import java.util.*;
 

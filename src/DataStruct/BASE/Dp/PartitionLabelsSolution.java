@@ -1,4 +1,4 @@
-package DataStruct.Dp;
+package DataStruct.BASE.Dp;
 import java.util.*;
 /*
  * 763. 划分字母区间

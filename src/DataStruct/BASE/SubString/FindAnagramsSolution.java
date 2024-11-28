@@ -1,4 +1,4 @@
-package DataStruct.SubString;
+package DataStruct.BASE.SubString;
 import java.util.*;
 public class FindAnagramsSolution {
     public List<Integer> findAnagrams(String s, String p) {

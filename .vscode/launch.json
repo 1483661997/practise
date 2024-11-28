@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PartitionSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.BackTrack.PartitionSolution",
+            "projectName": "practise_80d0c2d3"
+        },
+        {
+            "type": "java",
             "name": "RemoveDuplicateLettersSolution",
             "request": "launch",
             "mainClass": "DataStruct.BASE.String.RemoveDuplicateLettersSolution",

@@ -1,4 +1,4 @@
-package DataStruct.List1;
+package DataStruct.BASE.List1;
 
 /*
  * 143. 重排链表

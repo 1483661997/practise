@@ -1,4 +1,4 @@
-package DataStruct.Tree;
+package DataStruct.BASE.Tree;
 
 /**
  * Definition for a binary tree node.

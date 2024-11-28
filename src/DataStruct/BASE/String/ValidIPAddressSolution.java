@@ -1,4 +1,4 @@
-package DataStruct.String;
+package DataStruct.BASE.String;
 
 /*
  * 468. 验证IP地址

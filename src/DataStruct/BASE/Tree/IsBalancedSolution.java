@@ -1,4 +1,4 @@
-package DataStruct.Tree;
+package DataStruct.BASE.Tree;
 
 public class IsBalancedSolution {
     public class TreeNode {

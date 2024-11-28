@@ -1,4 +1,4 @@
-package DataStruct.Trie;
+package DataStruct.BASE.Trie;
 
 import java.util.ArrayList;
 import java.util.HashSet;

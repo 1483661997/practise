@@ -1,4 +1,4 @@
-package DataStruct.SubString;
+package DataStruct.BASE.SubString;
 
 /*
  * 滑动窗口最大值

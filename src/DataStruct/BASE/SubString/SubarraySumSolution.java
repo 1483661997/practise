@@ -1,4 +1,4 @@
-package DataStruct.SubString;
+package DataStruct.BASE.SubString;
 
 /*
  * 和为 K 的子数组

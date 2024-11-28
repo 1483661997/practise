@@ -1,4 +1,4 @@
-package DataStruct.Dps;
+package DataStruct.BASE.Dps;
 
 /*
  * 1143. 最长公共子序列

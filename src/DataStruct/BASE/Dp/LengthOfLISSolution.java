@@ -1,4 +1,4 @@
-package DataStruct.Dp;
+package DataStruct.BASE.Dp;
 
 /*
  * 最长递增子序列

@@ -1,4 +1,4 @@
-package DataStruct.Tree;
+package DataStruct.BASE.Tree;
 
 /*
  * 437. 路径总和 III

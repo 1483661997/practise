@@ -1,4 +1,4 @@
-package DataStruct.Dp;
+package DataStruct.BASE.Dp;
 
 /*
  * 55. 跳跃游戏

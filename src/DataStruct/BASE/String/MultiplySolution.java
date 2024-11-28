@@ -1,4 +1,4 @@
-package DataStruct.String;
+package DataStruct.BASE.String;
 
 import java.math.BigInteger;
 

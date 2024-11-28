@@ -1,4 +1,4 @@
-package DataStruct.String;
+package DataStruct.BASE.String;
 
 /*
  * 6. Z 字形变换

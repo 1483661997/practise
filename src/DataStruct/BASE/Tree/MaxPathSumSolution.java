@@ -1,4 +1,4 @@
-package DataStruct.Tree;
+package DataStruct.BASE.Tree;
 
 /*
  * 124. 二叉树中的最大路径和

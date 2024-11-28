@@ -3,34 +3,27 @@ package DataStruct.BASE.BackTrack;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
- * 1. 分割回文串
-中等
-相关标签
-相关企业
+import DataStruct.BASE.BFS.ladderLength;
+import DataStruct.BASE.Window.longestSubarrayLimit;
 
+
+/**
+ * * 1. 分割回文串
 给你一个字符串 s，请你将 s 分割成一些子串，使每个子串都是
 回文串
 。返回 s 所有可能的分割方案。
-
- 
-
 示例 1：
-
 输入：s = "aab"
 输出：[["a","a","b"],["aa","b"]]
-
 示例 2：
-
 输入：s = "a"
 输出：[["a"]]
 
- 
  */
 public class PartitionSolution {
     public static void main(String[] args) {
         PartitionSolution partitionSolution = new PartitionSolution();
-        for (List<String> s : partitionSolution.partition("a")) {
+        for (List<String> s : partitionSolution.partition1("a")) {
             for (String string : s) {
                 System.out.print(string + " ");
             }
@@ -38,7 +31,52 @@ public class PartitionSolution {
         }
         System.out.println(partitionSolution.isPalindrome(new StringBuilder("aa")));
     }
+    
+
+
     public List<List<String>> partition(String s) {
+        List<List<String>> result;
+        result = new ArrayList<>();
+        int len = s.length();
+        int[][] dps = new int[len][len];
+        
+        List<String> list = new ArrayList<>();
+        for(int i = 0; i < len; i++){
+            dps[i][i] = 1;
+            list.add(s.substring(i, i+1));
+        }
+        result.add(list);
+        list = new ArrayList<>();
+        for(int i = 0; i < len-1; i++){
+            if(s.charAt(i) == s.charAt(i+1)){
+                dps[i][i+1] = 1;
+                list.add(s.substring(i, i+2));
+            }
+        }
+
+        result.add(list);
+        
+        for(int i = 2; i < len; i++){
+            list = new ArrayList<>();
+            for(int j = 0; j < len - i; j++){
+                // a a a 
+                // a a a a
+                char left = s.charAt(j), right = s.charAt(i+j);
+                if(left == right) dps[j][i] = dps[j+1][i-1];
+            }
+            if(list.size() == 0) break;
+            result.add(list); 
+        }
+        
+        return result;
+    }
+
+    private void part(String s){
+
+    }
+
+
+    public List<List<String>> partition1(String s) {
         List<List<String>> list  = new ArrayList<>();
         int len = s.length();
         if(len == 0) return list;
