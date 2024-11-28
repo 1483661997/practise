@@ -2,13 +2,36 @@ package DataStruct.BASE.BackTrack;
 import java.util.ArrayList;
 import java.util.List;
 
-public class generateParenthesis {
+public class GenerateParenthesisSolution {
 
   public static void main(String[] args) {
-    for(String str : generateParenthesis(3))
+    for(String str : new GenerateParenthesisSolution().generateParenthesis(3))
       System.out.println(str);
   }
-  public static List<String> generateParenthesis(int n) {
+
+  private List<String> result;
+  public List<String> generateParenthesis(int n) {
+    result = new ArrayList<>();
+    generate(0,0,new StringBuilder(), n);
+    return result;
+
+  }
+
+  public void generate(int l, int r, StringBuilder str, int n){
+    if(l == n &&  r == n){
+      result.add(new String(str));
+      return;
+    }
+    if(l < n){
+      generate(l+1, r, str.append('('), n);
+      str.setLength(str.length()-1);
+    }
+    if(r < n && l > r){
+      generate(l, r+1, str.append(')'), n);
+      str.setLength(str.length()-1);
+    }
+  }
+  public static List<String> generateParenthesis1(int n) {
         // char[] charArr = new char[n * 2];
         List<String> list = new ArrayList<>();
         //只要保证仅在左括号的数量大于右括号的时候，才可以输出右括号就可以了。
