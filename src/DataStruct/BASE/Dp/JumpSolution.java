@@ -44,6 +44,22 @@ public class JumpSolution {
         System.out.println(solution.jump(new int[]{3,4,3,2,5,4,3}));
     }
     public int jump(int[] nums) {
+        int steps = 1;
+        int len = nums.length;
+        if(len == 1) return 0;
+        int left = 0;
+        int right = nums[0];
+        while(right < len-1){
+            int bound = right;
+            for(int i = left; i <= bound; i++){
+                if(i + nums[i] > right) right = i + nums[i];
+            }
+            steps++;
+        }
+        return steps;
+
+    }
+    public int jump1(int[] nums) {
         int len = nums.length;
         // int[][] matrix = new int [len][len];
         int[] dp = new int[len];

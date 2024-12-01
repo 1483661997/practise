@@ -33,42 +33,55 @@ public class PartitionSolution {
     }
     
 
+    private List<List<String>> result;
+    //two methods , 使用dp和不使用dp,
 
+    // 使用dp先获得dps[][], 再根据下标进行回溯
+    // 或者直接回溯
+    
     public List<List<String>> partition(String s) {
-        List<List<String>> result;
         result = new ArrayList<>();
         int len = s.length();
         int[][] dps = new int[len][len];
-        
-        List<String> list = new ArrayList<>();
         for(int i = 0; i < len; i++){
             dps[i][i] = 1;
-            list.add(s.substring(i, i+1));
         }
-        result.add(list);
-        list = new ArrayList<>();
         for(int i = 0; i < len-1; i++){
             if(s.charAt(i) == s.charAt(i+1)){
                 dps[i][i+1] = 1;
-                list.add(s.substring(i, i+2));
             }
         }
 
-        result.add(list);
         
-        for(int i = 2; i < len; i++){
-            list = new ArrayList<>();
+        for(int i = 2; i <len; i++){
             for(int j = 0; j < len - i; j++){
-                // a a a 
-                // a a a a
                 char left = s.charAt(j), right = s.charAt(i+j);
-                if(left == right) dps[j][i] = dps[j+1][i-1];
+                if(left == right && dps[j+1][j+i-1] == 1){
+                    dps[j][j+i] = 1;
+                }
             }
-            if(list.size() == 0) break;
-            result.add(list); 
+            
         }
+        backTrack(dps, 0, len, new ArrayList<>(), s);
+        
         
         return result;
+    }
+
+    public void backTrack(int[][] dps, int pos, int n, List<String> list, String s){
+        if(pos == n){
+            result.add(new ArrayList<>(list));
+            return;
+        }
+
+        for(int i = pos; i < n; i++){
+            if(dps[pos][i] == 1){
+                list.add(s.substring(pos, i+1));
+                backTrack(dps, i+1, n, list, s);
+                list.remove(list.size()-1);
+            }            
+        }
+        
     }
 
     private void part(String s){

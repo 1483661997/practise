@@ -37,6 +37,20 @@ public class CanJumpSolution {
     }
     public boolean canJump(int[] nums) {
         int len = nums.length;
+        int steps = nums[0];
+
+        for(int i = 0 ; i  < len; i++){
+            if(steps < 0 ) return false;
+                
+
+            steps = Math.max(steps, nums[i]);
+            steps--;
+        }
+
+        return true;
+    }
+    public boolean canJump1(int[] nums) {
+        int len = nums.length;
         int step = nums[0];
         for(int i = 1; i < len; i++){
             if(step == 0 ) return false;

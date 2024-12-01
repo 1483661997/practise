@@ -1,6 +1,7 @@
 package DataStruct.BASE.Stack;
 
 import java.util.LinkedList;
+import java.util.Stack;
 
 /*
  * 84. 柱状图中最大的矩形
@@ -38,7 +39,47 @@ public class LargestRectangleAreaSolution {
         LargestRectangleAreaSolution solution = new LargestRectangleAreaSolution();
         System.out.println(solution.largestRectangleArea(new int[]{2,1,5,6,2,3}));
     }
-    public int largestRectangleArea(int[] heights) {
+
+     public int largestRectangleArea(int[] heights) {
+        
+        int len = heights.length;
+        int max = heights[0];
+        int[] left = new int[len];
+        int[] right = new int[len];
+        left[0] = heights[0];
+        Stack<Integer> stack = new Stack<>();
+
+        for(int i = 0; i < len; i++){
+            while(!stack.isEmpty() && heights[stack.peek()] >= heights[i]) stack.pop();
+            if(stack.isEmpty()) left[i] = -1;
+            else left[i] = stack.peek();
+            stack.push(i);
+        }
+        stack = new Stack<>();
+        for(int i = len-1; i >= 0; i--){
+            while(!stack.isEmpty() && heights[stack.peek()] >= heights[i]) stack.pop();
+            if(stack.isEmpty()) right[i] = len;
+            else right[i] = stack.peek();
+            stack.push(i);
+        }
+
+        // for(int i = 0; i < len; i++)
+        //     System.out.print(left[i] + " ");
+
+        // System.out.println(" ");
+        // for(int i = 0; i < len; i++)
+        //     System.out.print(right[i] + " ");
+
+        for(int i = 0; i < len; i++){
+            int leftIndex = left[i];
+            int rightIndex = right[i];
+            int area = (rightIndex - leftIndex-1) * heights[i];
+            if(area > max) max = area;
+        }
+        return max;
+    }
+
+    public int largestRectangleArea1(int[] heights) {
         LinkedList<Integer> list = new LinkedList<>();
         int len = heights.length;
         int min = heights[0];
