@@ -38,6 +38,30 @@ public class WordBreakSolution {
     }
     public static boolean wordBreak(String s, List<String> wordDict) {
         int len = s.length();
+        boolean[] dp = new boolean[len+1];
+        Set<String> set = new HashSet<>();
+        
+        for(String str : wordDict)
+            set.add(str);
+        dp[0] = true;
+        for(int i = 1; i <= len; i++){
+            for(int j = 0; j < i; j++){
+                if(dp[j] && set.contains(s.substring(j , i))){
+                    // System.out.println(i + " " + j);
+                    dp[i] = true;
+                }
+            }
+        }
+
+        return dp[len];
+    }
+
+
+
+
+
+    public static boolean wordBreak1(String s, List<String> wordDict) {
+        int len = s.length();
         int[] dp = new int[len + 1];
         dp[0] = 1;
         

@@ -3,6 +3,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CanPartitionSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.Dp.CanPartitionSolution",
+            "projectName": "practise_80d0c2d3"
+        },
+        {
+            "type": "java",
+            "name": "LengthOfLISSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.Dp.LengthOfLISSolution",
+            "projectName": "practise_80d0c2d3"
+        },
+        {
+            "type": "java",
+            "name": "WordBreakSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.Dp.WordBreakSolution",
+            "projectName": "practise_80d0c2d3"
+        },
+        {
+            "type": "java",
+            "name": "CoinChangeSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.Dp.CoinChangeSolution",
+            "projectName": "practise_80d0c2d3"
+        },
+        {
+            "type": "java",
+            "name": "NumSquaresSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.Dp.NumSquaresSolution",
+            "projectName": "practise_80d0c2d3"
+        },
+        {
+            "type": "java",
             "name": "PartitionSolution",
             "request": "launch",
             "mainClass": "DataStruct.BASE.BackTrack.PartitionSolution",

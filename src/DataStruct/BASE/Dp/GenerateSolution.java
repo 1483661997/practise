@@ -8,6 +8,11 @@ package DataStruct.BASE.Dp;
 在「杨辉三角」中，每个数是它左上方和右上方的数的和。
 
  
+1
+1 1
+1 2 1
+1 3 3 1
+1 4 6 4 1
 
 示例 1:
 
@@ -23,6 +28,22 @@ package DataStruct.BASE.Dp;
 import java.util.*;
 public class GenerateSolution {
     public List<List<Integer>> generate(int numRows) {
+        List<List<Integer>> result = new ArrayList<>();
+        result.add(Arrays.asList(1));
+        for(int i = 1; i < numRows; i++){
+            List<Integer> list = new ArrayList<>();
+            list.add(1);
+            for(int j = 1; j < i; j++){
+                list.add(result.get(i-1).get(j-1) + result.get(i-1).get(j));
+            }
+            list.add(1);
+            result.add(list);
+        } 
+        return result;
+    }
+
+
+    public List<List<Integer>> generate1(int numRows) {
         List<List<Integer>> list = new ArrayList<>();
         if(numRows == 0) return list;
         // int len = 1;
