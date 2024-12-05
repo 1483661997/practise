@@ -3,6 +3,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MinPathSumSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.Dps.MinPathSumSolution",
+            "projectName": "practise_80d0c2d3"
+        },
+        {
+            "type": "java",
+            "name": "UniquePathsSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.Dp.UniquePathsSolution",
+            "projectName": "practise_80d0c2d3"
+        },
+        {
+            "type": "java",
+            "name": "PartitionLabelsSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.Dp.PartitionLabelsSolution",
+            "projectName": "practise_80d0c2d3"
+        },
+        {
+            "type": "java",
             "name": "CanPartitionSolution",
             "request": "launch",
             "mainClass": "DataStruct.BASE.Dp.CanPartitionSolution",
