@@ -30,6 +30,22 @@ n 皇后问题 研究的是如何将 n 个皇后放置在 n×n 的棋盘上，�
 
  */
 import java.util.*;
+
+/**
+ * 51. N 皇后
+ * 按照国际象棋的规则，皇后可以攻击与之处在同一行或同一列或同一斜线上的棋子。
+ * n 皇后问题 研究的是如何将 n 个皇后放置在 n×n 的棋盘上，并且使皇后彼此之间不能相互攻击。
+ * 给你一个整数 n ，返回所有不同的 n 皇后问题 的解决方案。
+ * 每一种解法包含一个不同的 n 皇后问题 的棋子放置方案，该方案中 'Q' 和 '.' 分别代表了皇后和空位。
+ * 示例 1：
+ * 输入：n = 4
+ * 输出：[[".Q..","...Q","Q...","..Q."],["..Q.","Q...","...Q",".Q.."]]
+ * 解释：如上图所示，4 皇后问题存在两个不同的解法。
+ * 示例 2：
+ * 输入：n = 1
+ * 输出：[["Q"]]
+ *
+ */
 public class SolveNQueenSolution {
     public static void main(String[] args) {
         SolveNQueenSolution solution = new SolveNQueenSolution();
@@ -39,7 +55,52 @@ public class SolveNQueenSolution {
             System.out.println("*********************");
         }
     }
+
+    private List<List<String>> result;
+    private boolean[][] matrix;
+    private boolean[] colE;
+    private boolean[] diagLeft;
+    private boolean[] diagRight;
     public List<List<String>> solveNQueens(int n) {
+        result = new ArrayList<>();
+        matrix = new boolean[n][n];
+        colE = new boolean[n];
+        diagLeft = new boolean[2*n];
+        diagRight = new boolean[2*n];
+        backTrack(new ArrayList<>(), n, 0);
+        return  result;
+    }
+
+    public void backTrack(List<String> list, int n, int pos){
+        if(list.size() == n){
+            result.add(new ArrayList<>(list));
+            return ;
+        }
+
+        for(int i = 0; i  < n; i++){
+            if(!colE[i] && !diagRight[pos+i] && !diagLeft[n+pos-i]){
+                colE[i] = true;
+                diagRight[pos+i] = true;
+                diagLeft[n+pos-i] = true;
+                StringBuilder str = new StringBuilder();
+                for(int j = 1; j < n; j++){
+                    str.append('.');
+                }
+                str.insert(i,'Q');
+                list.add(str.toString());
+                backTrack(list, n, pos+1);
+                list.removeLast();
+                colE[i] = false;
+                diagRight[pos+i] = false;
+                diagLeft[n+pos-i] = false;
+            }
+
+        }
+
+
+
+    }
+    public List<List<String>> solveNQueens1(int n) {
         List<List<String>> list = new ArrayList<>();
         int[][] matrix = new int[n][n];
         //控制第一个旗子的位置

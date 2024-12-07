@@ -68,21 +68,21 @@ public class CanPartitionSolution {
 
         return dps[len-1][target];
     }
-    public void cal(int[] nums, int target){
-        if(target==0){
-            isValid = true;
-            return;
-        }
-        int len = nums.length;
-        for(int i = 0; i < len && !isValid; i++){
-            if(!isVisited[i] && nums[i] <= target){
-                isVisited[i] = true;
-                cal(nums, target-nums[i]);
-                isVisited[i] = false;
-            }
-        }
-        
-    }
+//    public void cal(int[] nums, int target){
+//        if(target==0){
+//            isValid = true;
+//            return;
+//        }
+//        int len = nums.length;
+//        for(int i = 0; i < len && !isValid; i++){
+//            if(!isVisited[i] && nums[i] <= target){
+//                isVisited[i] = true;
+//                cal(nums, target-nums[i]);
+//                isVisited[i] = false;
+//            }
+//        }
+//
+//    }
 
 
 
