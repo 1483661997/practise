@@ -1,4 +1,4 @@
-package DataStruct.BASE.Thread;
+package DataStruct.Thread.Thread;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
