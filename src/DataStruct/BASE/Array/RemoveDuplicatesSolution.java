@@ -1,4 +1,4 @@
-package DataStruct.BASE.array;
+package DataStruct.BASE.Array;
 
 /*
  * 26. 删除有序数组中的重复项

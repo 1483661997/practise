@@ -1,4 +1,4 @@
-package DataStruct.BASE.array;
+package DataStruct.BASE.Array;
 /*
  * 7. 整数反转
 中等

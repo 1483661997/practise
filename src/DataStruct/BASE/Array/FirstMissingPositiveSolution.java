@@ -1,4 +1,4 @@
-package DataStruct.BASE.array;
+package DataStruct.BASE.Array;
 
 /*
  * 缺失的第一个正数

@@ -1,4 +1,4 @@
-package DataStruct.BASE.array;
+package DataStruct.BASE.Array;
 
 /**
  * 4. 寻找两个正序数组的中位数

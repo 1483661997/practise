@@ -1,4 +1,4 @@
-package DataStruct.BASE.array;
+package DataStruct.BASE.Array;
 /*
  * 1450. 在既定时间做作业的学生人数
 简单

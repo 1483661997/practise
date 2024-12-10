@@ -1,4 +1,4 @@
-package DataStruct.BASE.array;
+package DataStruct.BASE.Array;
 
 /*
  * 1539. 第 k 个缺失的正整数
