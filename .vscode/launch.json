@@ -3,6 +3,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ValidNumberSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.regex.ValidNumberSolution",
+            "projectName": "practise_80d0c2d3"
+        },
+        {
+            "type": "java",
+            "name": "NextPermutationSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.Permutation.NextPermutationSolution",
+            "projectName": "practise_80d0c2d3"
+        },
+        {
+            "type": "java",
+            "name": "MinDistanceSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.Dps.MinDistanceSolution",
+            "projectName": "practise_80d0c2d3"
+        },
+        {
+            "type": "java",
+            "name": "LongestCommonSubsequenceSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.Dps.LongestCommonSubsequenceSolution",
+            "projectName": "practise_80d0c2d3"
+        },
+        {
+            "type": "java",
             "name": "MinPathSumSolution",
             "request": "launch",
             "mainClass": "DataStruct.BASE.Dps.MinPathSumSolution",
