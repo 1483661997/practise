@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MaxSpendingSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.matrix.MaxSpendingSolution",
+            "projectName": "practise_80d0c2d3"
+        },
+        {
+            "type": "java",
             "name": "ValidNumberSolution",
             "request": "launch",
             "mainClass": "DataStruct.BASE.regex.ValidNumberSolution",
