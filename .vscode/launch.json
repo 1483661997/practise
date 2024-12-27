@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "OccurrencesOfElementSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.Array.OccurrencesOfElementSolution",
+            "projectName": "practise_80d0c2d3"
+        },
+        {
+            "type": "java",
             "name": "MaxNumberOfApplesSolution",
             "request": "launch",
             "mainClass": "DataStruct.BASE.Greedy.MaxNumberOfApplesSolution",
