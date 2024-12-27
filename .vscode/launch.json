@@ -3,6 +3,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MaxNumberOfApplesSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.Greedy.MaxNumberOfApplesSolution",
+            "projectName": "practise_80d0c2d3"
+        },
+        {
+            "type": "java",
+            "name": "MinKnightMovesSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.BFS.MinKnightMovesSolution",
+            "projectName": "practise_80d0c2d3"
+        },
+        {
+            "type": "java",
+            "name": "MinValidStringsSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.Dp.MinValidStringsSolution",
+            "projectName": "practise_80d0c2d3"
+        },
+        {
+            "type": "java",
+            "name": "GetFinalStateSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.Heap1.GetFinalStateSolution",
+            "projectName": "practise_80d0c2d3"
+        },
+        {
+            "type": "java",
             "name": "MaxSpendingSolution",
             "request": "launch",
             "mainClass": "DataStruct.BASE.matrix.MaxSpendingSolution",
