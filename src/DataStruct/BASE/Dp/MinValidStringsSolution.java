@@ -1,0 +1,126 @@
+package DataStruct.BASE.Dp;
+
+import java.util.*;
+/**
+ **
+ 3291. 形成目标字符串需要的最少字符串数 I
+给你一个字符串数组 words 和一个字符串 target。
+如果字符串 x 是 words 中 任意 字符串的 前缀，则认为 x 是一个 有效 字符串。
+现计划通过 连接 有效字符串形成 target ，请你计算并返回需要连接的 最少 字符串数量。如果无法通过这种方式形成 target，则返回 -1。
+示例 1：
+输入： words = ["abc","aaaaa","bcdef"], target = "aabcdabc"
+输出： 3
+解释：
+target 字符串可以通过连接以下有效字符串形成：
+words[1] 的长度为 2 的前缀，即 "aa"。
+words[2] 的长度为 3 的前缀，即 "bcd"。
+words[0] 的长度为 3 的前缀，即 "abc"。
+示例 2：
+输入： words = ["abababab","ab"], target = "ababaababa"
+输出： 2
+解释：
+target 字符串可以通过连接以下有效字符串形成：
+words[0] 的长度为 5 的前缀，即 "ababa"。
+words[0] 的长度为 5 的前缀，即 "ababa"。
+示例 3：
+输入： words = ["abcdef"], target = "xyz"
+输出： -1
+ */
+public class MinValidStringsSolution {
+    static class Trie{
+        private char ch;
+        Map<Character, Trie> map;
+        Set<Character> list;
+        public Trie(){
+            map = new HashMap<>();
+            list = new HashSet<>();
+        }
+
+        public void insert(String str, int index){
+            int len = str.length();
+            if(index == len) return;
+            char c = str.charAt(index);
+            if(list.contains(c)){
+                Trie tmp = map.get(c);
+                tmp.insert(str, index+1);
+            }else{
+                list.add(c);
+                Trie tmp = new Trie();
+                map.put(c, tmp);
+                tmp.insert(str, index+1);
+            }
+        }
+
+        public boolean contains(String str, int index){
+            if(index == str.length()) return true;
+            if(!list.contains(str.charAt(index))) return false;
+            Trie tmp = map.get(str.charAt(index));
+            return tmp.contains(str, index+1);
+        }
+    }
+    public int minValidStrings(String[] words, String target) {
+        //字典树
+        int len = target.length();
+        int[] dp = new int[len];
+        Trie trie = new Trie();
+        for(String str : words)
+            trie.insert(str, 0);
+        
+        
+        Arrays.fill(dp, len + 1);
+        dp[0] = 0;
+        
+
+        for(int i: dp)
+            System.out.println(i);
+
+        return findMinSteps(dp);
+    }
+
+    public int findMinSteps(int[] arr){
+        int steps = 0;
+        int bound = arr[0], right = bound;
+        int pos = 0, len = arr.length;
+        
+        for(int i = 0; i < len; i++){
+            pos = Math.max(pos, arr[i]);
+            if(pos == i) return -1;
+        }
+        if(pos < len) return -1;
+        pos = 0;
+        while (pos < len) {
+            while (pos < len && pos < bound) {
+                right = Math.max(right, arr[pos]);
+                pos++;
+            }
+            System.out.println(pos + " ////");
+            if(pos < len){
+                right = Math.max(right, arr[pos]);
+            }
+            steps++;
+            bound = right;
+        }
+
+        return steps;
+    }
+    public static void main(String[] args) {
+        //输入： words = ["abc","aaaaa","bcdef"], target = "aabcdabc"       
+        Trie trie = new Trie();
+        // trie.insert("abc", 0);
+        // trie.insert("aaaaa", 0);
+        // trie.insert("bcdef", 0);
+        //  System.out.println(
+        //   trie.contains("aaaaa", 0)
+        //  );    
+        // MinValidStringsSolution solution = new MinValidStringsSolution();
+        // System.out.println(
+        //     solution.minValidStrings(new String[]{"ea","a"}, "eaeaa")
+            
+        // );
+        // System.out.println(solution.minValidStrings(new String[]{"abc","aaaaa","bcdef"},  "aabcdabc" ));
+        String[] arr = new String[]{"eceeaddbecddaccecacaecabecbdbbbdcccbccdeabeceadbcbaabdaebbdcdaddbddcccecaeaeacdadabedbabaaaecaecedaedcbabeadddbdacedcadcebbbbacbcbabaeccceaebcaeedcddcdeaeaecdecaeeabecdadcaebbeabbeeabbeacaedaeaeebeaeedeceddecadaccedeedddbbeeabaadcdbceecdeccbbceecacdcbcdebaeaaebadbebebaddcddecdebeaadbdeeabeebcaecbdcebbdcdaabccdcaeedcababcabadbdccbbeebabcdddeededbbdbdabadbaeaedccdaabcbaceaddbaadaedddbdeceedacccacaeedbeadcebcdbdecabbdbeacdddadbdcdebaadcbceadbabecbacaecabadcdeaaddacddabccdcbbbaaeececaaabadddbdbdaaadcbdbbaddbcbaecbaddcbbdadddcadcbeccbcceebcbdbceccbddebbceadadbabaeebcbdecbbdccbeebaeaadbcdacaeccebecebcbbabcabaecdbeddbbdebbdbdbbdacbbacbabaaededbaeceacadeaccbcdadcdabdddbbdbeecbaabdbcabbdbddedcdabaebacabebeaecaebaebadecababdbecdedbdcecbebecdcbeeacedeeccbcccccccebccaeddedabdeededdcbcccbdeadeedeccceaccacaecbabccacedbdcaddaedbeeaaccacbeaceadaeecbbacabbbedeeecabdbaeaabbecbdddebeabdcbbaeaaadaaabeaddaadaadbdedcbabebdaecebcaddbecaadebbddadaecdabddbbbdabaecaddcbdbeadecacdebaeaebabdaebaccbaeaabbaecdbedceaaceebcdaeceeeacaeacadbebdedebceaeaaccddccdcbaccaeadcacdcababcbabddabcbbaabcaacecbededebccdaadbccceaaaabceaaecedbcdeccceddebaeabaadeccaccbbdcabcabccedbdaaebeadebacecaabceebcaaabeccebabbdaecbdcdcaceaabaaabadebadcabccedbbddedddcdaabbbdaadbdacedaaccdbccebdaedacdcbbbdeaebdceeebbadbddbaadadebcdbd","dacacaddecdbbebadcbbacbdadaacdeebeacdacabacdaeabdcadadeeadddcadacdbaeabcaabeebdddedbbcaaebcbeeaaececbeddbcedabcabedccabeebbececcbcadcccbcecedbacbdaccccebadbcedadceccadbcdceebbacaadbdbeeacbbcccddbbaedbcebcdcccaeaacedceabbabcdcbabdadddcaeeceaacadeeecaedebbeeadadcbbceccbeabbdcebbaaebcecaeaccdcdcdaadbaaabedcdcdcabadcbacbdccedadadebeddcbbcdbdbbbebeebddcbdebeccbdbdeedadddbbaacebeaadbaeedabaaacccbdbecaecececeddbbcecdbacdcbcbabbebabeccaeedbbdaccdcaccdeedbbaaeeeeacceadeaccaaecadedceadedcddbbdeebeedebaaadaaaeebedcbbedbbaaaadaecddeaddcebdebcdcdedbedddbddcddbbceedecdbdadecacbbacececdbcbacadbbebbbbcdceedcabeeebddacadeeaacdbaeeeaadeceddaeccccacbbcecbecebaabdadbceabdbbeccbdbcbeaabedbeabacbddcdddabcbbacbaaabaeeabdcceecedeedbcbababccaeceecebbeeacbabdbcecbccdbabbcebdedcbbebccdcbbeedcdbbdabebeaeeddcaaebbdbeeaddcdaacaecaeabdaecceebccccbbbdacebabadcedcbedeccbdcecbededaddbcdcbaeccdccdaabacdddecdeaeadaedebbbdeeebbaaeddbaadaceabecbebdbdaccaabbbbcceadeebaebeccaeccbcdcbbcddbdbceeaddebddecadabeeeeadaadbadebdaaeeccebaaaaaaeeecadadaadaeadceaedbeaabcbcadaaeeedaccaacedccbeecebcacbcbeaabbbacccdaaddbaabecebbcdccbddbdaabccdaceddaebadaeccedbdacededecbcdeabbbaeddcdceebbddcbedbdcbbaccceeecebebaaebebbecdcdbdcbaecedbeaaceebaddeeeadcbdcaebebabaadccabadbacaeaaaabaebdecacbeddeebbcbabbbacaeebaebcaeeebbdabeadedeebbaeeedcdaccebdbacbabadadbabcacaebdcccbbbcbccacdabcdbcddadccccbeacdeaadbbbecdbcebcebcbcedcbbaebdaabadabeececadbecbceedecebadeccbcccccdbbddaebcaeebdcebdaedbdcebcdeacdcacbaadddaaaeeeebdeececedcddeacdaadcaceccdcbcdacbedadeadccabeabcbdbbdcbaedacadbcbbded","dcebbcdbcedaceabcbbacbbbeacdcedcbbeecddbbbbbeddbeacedbdaadaeeacaaacaccbdeadbeadbebbabbebadccebceccecdadbccccddeecaaeecbdbdedbabbbdbbbcccaedcabbccbeecddbeaaccddccbbdcddaaabcebdeabbbeadbeeeeedeaedcaaabacbaaaadaedcaeabbbacddccbdadcedacddaeadcdeedaebbbcaebebbaebddbbacabaabbbecaaedbacbbadcdbbcbbdaebccebadcaadbbcbdcdaebadceebdaacdebcbcdeebabdabebceccdbaddcabbecebebdcaaaccdabeeeddbaddeeacaedbcacdbaaebdadecbbddbadabccabeeacbcedcecdceedcbdccddcccbacdaaacdeebccacbacecaacebbebceebedebaecabbddadedcbbdeeddcaaaddebccaaccbbaebebbacedeacacaaadcdcaeceeaeeeeaecbdeabecaabaaedbaedbdacececcacaceedcbcbcbdddcbbbedabcbdcaaceaaababcbeeadedebebbcbdebbcabcaaecdbdeabbcdbcdccbbcecbccacdedbabbeaecbbdbdbdbbaddbcbbacbdbbabddeabacbedaaeaabebadebbbccedbeaedaadaeddccaeceacbcbeedeaabdcedbecabdabbeaacdbdeabdbbeadecacedbcacbedcdacbdcecacaaaaaecdcadbdcbdbdacedbbeedbdeddebccdbcdaaabeedabdcbbcaebabebbbcbadceebdbbcccebadeeabcbeedccaccccccbdbbaabbeeddddebcdcebdcdceabbeebdabcedecaaccdbacaaacbcedcebbdbcdaacbbacabbdbdeddcaededbadcbceeadebeebdedbbbacedadbacdbdbaedcdbcaaababceedaddbeceaabcbadbadeaadeedbcaebbbdbcddadaabbeedebabbacbcbbedcaccbeacdcebedeaeeaadedccabbbabacbaeddcaadbaacedcbcbeccddcddaaccecddbdaeecceaedbdebaabacedaeaddcdbddccaddcdbcdecdebceaeadaebbaaceacaadabcdbedeedeaadeeeabbcabcebabdecceeecbaeadcbdeceababdabadacbebebddcdccadaedadeaccdcbcbcecdaceabebdddcddaaabedaedabcdaaccdadcbccadcbaedaeedcedeadcecaccccedbdbdccaeadacdacbccbdaddedabebacabcdbedcccadabdbcdbccbbedecedcddbbecbbbcdebbabdbbbecbbcabcbebdacdcccdaeadaedcdccebdcbbddbcbbbcbaeeeceeacbdbeddaadeeeabceebabdbdabeaceecedbeacbbccbeddbaeececbbaaadaaadcebccaacbeccaecaebbbbbbccbceaaeedadeabebabdabcabdbdcccaadcabaebdacedbcbdcdbbdebcbdddeabdebdeccaeaeeedbaebababbcabceabcaceaabddedcbcbcddcdbadebbcababdebcacedceedeabdbdadcedbbacedbbbaadbeeeecbabccbdaaabcdcbcedeacdabbaebbdbaceabecccabbacedacddacabcbedcbdabcaaebbabbeeeababbccacdecbaacdbdadeedbdcdeadeadeccebccebeddadbdedbdedccdbbbcbddcdacedccdecddcdcccedbbedacaebcaabdaddbcbecbababdcccbccebebcdbdeebbbbddecabbaaabcbbbdeeeccdecdaabcbcddacbaaadededcebeaabcddddedaeedadebcdddcbccbbedbdcddaccadbbabcdbdadbbcbbdaebdaeaceacceaadacabbeeddecadbeeecaeaeadbbabddcedbdcbadecbdbbabcccbbedbbaaebbecaedcacecaaeaaabeabacaacddddaabbbcaaebbcabdcaaeceddbadecbcbbedeebaabcdabcddbaacbcceeebeabaeebbeaddbdbadaceadebadedbbeeaedbebddacdeeacddbdaadadeaeadabecaedbeebdbbabcdedaabbebaaebbcdbeaadabbdebbbceaaaacebadbdecbbbabeaadcbeacdeaeecdeceedaedcbadbeacdebcaaebdddadadbcbacddccedddbeebbddeacdaaeedeeddbeecbbcaeaeaaabddacdcbcdaaeaecaaaadeacadbcaccecbaaecbaecccecccccccbedebaebdedacebddceaebacdadbeeedeebdcdedaaddbabcdeecdadbcdbcecdcbedccaeebccdbdadedbbecaabccdbaacbecbeadceadbdebacaccdeacbaeecdeddaebdbbecadabdcabaedadbeaaedbccbcababbcbbdaeedcadcaeabbdeecdacbdbeecddbbabececbdddaddabadeebbdaccbdcbbebcaabdececbcbcebadeaccbdeedcedabbeeaedacacededddeaadbcecedbbecbcaeeedaaacdadddeccaaadcdacdedeadbacdebedbdeedaeadecceddceeaeceaeddebbbeceebcdceadbaeecddaaccbeeaccaaabdeeddbcbdaddddaadbddaaabdcdadcbaabdbedbaeccaaabaebbbdbddbcccebabccedbbbbebbadaebcbbbbedabcbbedbecedccadcebcbeedeeacacdbaeebaccdcdeddedccdddcecabdccecccecebddeaaabadacaaabaceadbaeadebcedeaaadedcdbdbcbaddbdcaeadcbadcdbcaabbabcdcdaabaadebdbdabbabeedeaeedcdbedcedecaaebeccdbeeeeacdbcbeccbbdccbdbceeecbcdbbededdeebddadcedadcdcccacaaacedeccbdeaaadbcdbababcccdcddcbedecbeaebdadbadddadbdaaadaeccecbcbadccdbdbeaebbeabcdbeaeaedeecabcdedaabccabbbcbbbbed","ecabaeecbaacadecdeadecadeedbaeaaabacedabaebdaeabdbdbbbcaaccdbcddedbbeaedccbaaaaacccdadbecabeadbbdcbdeecedcbabdcdcecdeacedbeacdbbdeddeedcaabdddddaadcdebabdaebacccdabaaceacdbbedceddddababeccabbebadddbbaeadbedccddbdaededbceacbdbadbccbabaacbbcbddccdabce","dedceceacecdcdbcaeadbebdeebabdbaedbcadeebdcbbbdabcacebbbbbbdeabdeaabbaeeaaadaaedbddceabeaaeabbdbeedbbccddeeddbdeebbcbdeecdceebcdcdabaaaeaceeadebedebcecabcebacedbabadadcabbdedcbceacbdccbacdbbbacaddcecbedaadedcebeceedadceddddebddbbeabceedceceecadebdabccdbaedecdccdedbdbccadbcebcccacacaebabccaedadbceeedccbccecddedacccbaadbebecebbdebecdaaacdedbeacbeabebbdeacdbecbaeaabdebbcdacaedaaacacaaeacdecedeacdbecacbcbbccddeebaddddabacebbdcdbdabaaaecdcdebcbaaacabdecdcddcceecbecebacaabadeadbccecdeaccbbbeaaaadaceabaaadadecdccbadbecacbdebaceaebebceabaceddbbcaccbaaddcdcadaaecbcdacbececaeacbbceecbbcdecdcaebdaababcbcaecbdcddceeecbbdabddccedbdacabaadeabaaaaeeeadaceacccaacceaabadbbdaeeaecdbedbeedabaabecadcdbdbcdcaeacdeadacdadaacdbdadebedbdddaacdddcbbccacbaabbdbccbaadddaccaaedebebebabdcabedcaaecbaebeaadaaecdadbeceacbddeccaacaaadacbcddaecdbcdecaedebebbeacabdebdcbccbdbeccacdcebeabbdeabcddcdcbdaccadebecbcaccabebecaeaacaaddccbdeccbaaaeadacbeceedbebdacacbdacbaeebbcdbebadeeceadcdcacebaaedadcbaaeabcceebbcbaedcdabbabcbabeccbbecacacbebcddeacbdcceebcbdccacaaacccdbabdcdedbdeeeddbdacddbbbedaaccdcabdebaddabbacecbebadeeadddcbdbcccbbbbeebecdabacccedcaabdbdbaabbbcceacaacaeaaabeedeadeadbbbaeedcbdacdecbcbebaedeacccdaadccedeccabeeeddeddedaddecabbeacbccabcddecaadcbdbdabdecdeaeabbcecedbdbceabcaeccaecebebeaaeebbccdccccddbcacababbabdaacedcdaadeceddeceeeededddabecbbbaaaedcabdadbcdebbdedceaaddaedcceccccbbeddedebdeddbcbbceaddeeeabdceaceebeeaecdbeeecbbeedeaacecdeccdccbeebeecbedceddaeeccaaacbcdccebdaacecaceecbcbeaaeddcdccadcdacddecbeecaabdaedeaadebaddbcdbcaeceadbdeedbebcbdeeabddaaeadddddeeaaabaaadebddbadadbcacbabccbebabecaaccdbbbecdadedbbdbbacaceccedcbdbceadbdbecbceaacdeeaedcadcdcbddeaccbcaeecdedeaabdcadddbcddcbbeebcddcedacaeaebddeacacabedcccddbcdebdcebbcccbbadbdcaaeeeccaccacbbaeacdaeebeedbcdaaccaeaedccdedbbdbbbcdbecdccdabcdddedaecbebdcdabadabaabd","bdbcbebcbcacdbcbacabebeddcbcdacbcbeccacecdecaadbedbbdaeebcaaeceecbabddacaaeaeeebbacacccbaecbaabaeeebccacadebceeeddbdadcadeceedecadbcebcabaeddeedecbcedeaaaebcbaabeededacdcccbeaaecceadabcccbaeecdabdbedbadecbcaeeaaedebdeaaedcdbbbabdbdbeadbaabbedaebaedbdbecddaacaacbbcdbdcebcbcadecbaaabccdccaaecbcbbddaececbdbaecddaddcedbacacadbdbececbbbcdebbacbaeeaedceebaeadbbdadebdbdcddbedaeeeaddceabcddabddbdedbcbbbbadbbacabcaaceedeccaecaccddcaedcddeecdaaaecddcacaeabecdaceddedddcdcaadacadcedcaededbeedbcdccdcaccdaebceecccdacebcdbbebbecadcebcaddcbbbdcbeaddabacdaeedacccdbaecbcddaedbbbbaebdeccbdedddbebececbaaeabcbaaedcadcadabcadbbbccadbbbebadbcbaaeebbbadccbebadddcdbccadaebbdaeeadebddadaaaaccabbecbaeabacdecabcceedaeecabadbcebaacaadbeaeeeeaaedabceaddcdacdcaddeccddcbebedcbeaddbeedcbaccaaaeeacaededbddbcbddcedddebcdddeccbcaceedbcdadeddbaddccceedabcacaacbdebecdaaabedadceddceccdaaceddcaabcaeecadeceecacdecadbbeaceebdedcaaaaaaebdaddcbcbcbceddcadcbbcaceabedeccbeaaedddcebdcaeccadaeedcbaabaddadcbdabcbededebaacaadebddcabbbacdcdedcdcabeacabbbabedacebeaacaaccdaeebcbbdbacbebccddeabeaebcecaeaaecdecedcdbbbbaaddebeaebeebaddcbcbbcddcbebedbaedcbcbeebbaaaddbcecbeecacaebebddaadeadaacecbedaeacedaabbdcaaedbeeedcbbcbddbdbaaccaeeaaaddeccabadebcadcbadeadbeacdcdeabeeabbdaabdcbdbeecebbbbacdaadeddebbdebdbcdaeabedadadbceebabbedeebaebdbdbcdacbbbeeadabeeedbbeccbdebeaaceedacdccbedddccedecddbeddadbaaabceebedcebdcdbbeeedadebdacaaecdeedacbcebbdecdceedeaadcddebdccccceecbccaddcccecbcaeebbaeabebcdbedceacbeccebcdabbcaadddebcdecabbeeeeebdbdbcccabeedcadabbbebeddabbbceceddedcbbdbbaeacdecbaccabcccdccacdddebaabeadacbacdedbcdaddbeadaedaadbcccdadbdbdbdcbeeeaadcbbacdccdeeadeabceacaebbaeeaeacccedabdecdbadbbceeacdebdabacecaaedecdcdbbddcdeeabadaedbdebabaaaccbadbccbacbcbebcdedcbbecaecddaaecdbacebbbdebcaaceaeddddeeeabceeebcebeadcdbaecdcddbebceecceacdaeebeaaccedcbbeabdaccaeaecdbbeeeaeeaaedbddeeddeddbeecaddcdbececbdeecbabbacdcbededaeccecedeeeaeebaadddbbcaabdeaceadcdbbdeaadacdbdecbcaeabeceaeaebeeeadcdcdcddbcdcebaebccdabdbadabbccdecaccaeacbaddbeebbbdddddccbdbabddccabdcabdbdbedbcebebddabbdbabadeedcebbcbebbabeababcbeccaadeecaaecbdbebecedeecdcaddaeeedbddcdbbdadebcccbacacaedceeecdbddeacbaacdcdcdaabdbeaacdabaeaddaaeacedccccdedcaeceebeecceddcbbabbecccbadbcdbbcbdeceecaceeaaaeeebacecceccdabccaacdacacbeebbdceebeedbdaceddbbbeebbcdeeacdebdeadaecbeabecedadaebaedceecdcdcccccaecdbdbcbbacdedccbdaddbedbbbcacbcbbcbcabcdddbcebbcceccedddcabdadebeebddaaaaaaeabcdabceddeddceceaedbdeabeabddcdbebabcddcededddebaabcadddbacedecaeaadcbcddbaebdbaaadcbcddacbbadbacbcbacdcdeacbddadecbcedaabdabbcceecbacabeedbdbcdcebdaaacdeeacedadecaddcadcecdceeaaeabdbaaaeebadabddacabbbebbbeddaebdcaadaadbccabbcdbcbaabdaedaaedbaaeedbebcbadeebbaeecdcbcbdacbebadadadbcbbdbcbdedaebeccedcadbedacbeaacbacccbecdbeadaabeddaadeceaadeadededccdebdddbdeaeeaceccccdabdecdeddbddbeaebddacdbdeebbccecedecedebecdacbddddddadcabedcbbcebbbcbedabaeacadcbabaebacdeddaaecbaacbccbcaebdcebddedaaddaeeecaeabaecedadbeabcdacbaaecbc","edbacedabdeaebdcabdacaceeebdeadbdeadcdcecebdecddeedddbaadacdcdbcaccaedddaeededceedbbcacdecaebaeecadcdcdecbcbabbeeadcdcbeaaeeebbddbccacecdababbcdbbcddcebdbcbaacabedebbcccceecebdcdaccabccadaeaecdddeccabceaaacdbbaddbbbecbaceaecaddeeebaddabadbadcddbbdebbcbcceabadecadbdeeccdadadeacbaaccccbbaedeaaaedebabbdcccacebebdcddbbdbdbbcceedbacaeabacecebeedaabcddcedebbbcbaacabbdebcccddcdeeeeaeadbecccecccaabdedeccebaeecabdbcdebddacadaadadabdbddbcbbdeacdddeddabececeabebcbcdadababbadebcdaecedeccdaccebeeacbeaecbedccdcecceeddcbdceaecaeaeacddeaacccedddebdaddaccdcadcbecaaaacdcddceedabdeaadabeebacaceaccedeaabebcdaadbbdcbeadaeebcdbdcedabaecabebeacebcabddebdebdaaaebdbbececacecdddcceeaaebbbcbccbcecbdcdeecceeceeaaecaebcbaadadcddbcaaadadaecbcdcbccaccabeedbbebddbdccdcbedbecceaecceeebaaaddaacbedcbdddaddabaddedcbbadbdcaacacaeedabcccadbccddbeaadabacdbdeecacdeeeaddbaecabeabdbdbcbacbaeabceeddceadcedaeaeaacadedcebcecdbacdecbdabcebbedcedacdadacecdabaabaabbdabbeeaaccabbaedbdcdbdadebcbccaecbccdbdabbdedbabbdeabadeebbcbcadbdcaaecadbbecdaeabbbcddeeedcddebacddeeccccbcdaeaecacdcbeeacccccdccddaeeabddbacaeaeaebeaccbcebddbcabecedcbcabeceaaaedbdbdcaaaaebadeeaebbacddbcddddbbeedebbbaccdabbcbcaceebadeeacdeaaadabecdecbbbcceedceebcbbdbdddbacadcbbdebdcecacadcdebdedddbecbdaadedbddecccdcebcacbdeeadcdcaecebecbcedcddbadbeddedeadbbaaaaadeccbecebecaaaeceeadbdacabdeddcdabcccbdabdacaddcbdeadbbaeaaddabbcebeadcdddcecadbeccecbbccbbeeceebaeeddccbececaedccacabae","ccecaabcdbdcbeedaccabaaddaeaeaaceaaceabeddceaabdcbaceedacbcabebbcbbdbdbbaebeecdbcabedbacbeaadbbdbabaddaddecacdcededbcbbccaaddcadbccaeaacecbaecdccabddddbdbbbccdbaddeaadbbdececcdabdbbcabeebdcaeeceaebbcebbacccdadcbdbdeccdcdbcbbecbcededeeaaecedacdbcecdbeacddeecdbcbbbccecbbdbcbaaceabdcacedeeeeccadaaabdecebcdecadabdaddbabdbccdcadddbddddbeebdcbaeaebedbbcdebbedceeadeebceeeecbdbcddbadabdddaebbccacaddddacbcabbbdddbeccecebdeedcdaeeedeaacdebbbadeeeaaeebaeeacbdccadeacedcdeabdbdebadddcedcdbeebccaebecaababdadccecedaccebcbebcadaeeaaaebecaebeadabbcaecbddcedaeebbbdddbedddccddaeaccaebbcabebcbcecdbbdbadaecdbeddcaeeeeddebcaecddccdadbeadaababdddedcbaabdecbbaebbaeaebdeaeecbbadabeccbbaaebebddaeeceabddbceabbbdbaecbeccdabdecdadcbebecedaaeaeccecebdbaaacdbdcbbeddbcbbbbccaeaacabbeddcebeabacbeeeeeaabadbdecbdaccceedbbcaebcdedbebddcddccbcbadeedadeeccbadaabbdbadebdbdbcdadcaaeedbbbcedeabebdbdbadebaadbbadabddaccdadcbbddaebaebdbeccbbccddcbcaabebaaabbedccbbebbbdbddbdacdcdbebacacecbeccccabcadeeaabdeebecdedadecdcbbdbcbbabedddcdbbbdebceebcbddaacccbdeceddeddbaebedebeabbbbdcbeedeacebccbebddcbaceadecadbbaaccbbccedbcaadeddddccadeeabbdedbeccaeaeecddedebbbaebaedeeadbbddecedbcecdbadebabbacdaceadccdaeddeedccebabcbddbcaeccedeaeaecedbabcdeaedddbadbacaedbeecdabeaecbdebaeacbbebeceaeedddbbcbedbaccbedebdecbddbdddeeeadebeeadbbeadecadcbcbeacbaadcaebeedacecebeabbbcddbabebaaedeadabcdbbcaedebbbcbddededbccdeadbedacaedabcbbdbbbeedceeeaeeabcdaacceedbebceaabcbbcdaccbaebaeaccaaceaadbaeecdebdabcadcecbacdbbbebeaedadaaceaaacdddceeecacacddebcecbeceddbcbddebcdcccddcebbaacadeebcccaebbcababdeddcacddceccccdcbebdadbbaeeaecbdebcaedcacaebaebdcabadcecaabaacadddadabbdeaabbeeaeaebeaedacbcbeaaaccedcbcedaabcbcbbabaebdebbdccdcdaacbcbbbedebbbcccedbcbbbdbcebabedddbcadddcdcebaacabbadbbababbcceccbddaebdacceedaedceeadbabacecebbdcaecdcacbbbceabdbedbeeccaecbbbdaeeabdebadaccdcacedaaebabcaabdabdcbdaebbacaaeebdbbddcaaceddbaaecbccecbabeacadadddedabecaedecebdacbdedcdcedbcabcbbaceeaeccaceedddcdeabcdbcebacdeddabeedaebeecaccabddbabbacbdaabaccbbc","caeeccdcbceaebaaaaeecbdeedeaedcbdcabbcbdbcdebdcbadbbcbaccacabbbdacccdbaececeeedebeadabcbbcbedaddedccdcaccebaebcdedbcaceedabbecdaeeaddeddeebacdbeeaebdddeeeadebcaaebdcadcdaeaaaacddbedadaaacbbccecbdceeebaceacdebbdaaeaceaacceaccdddceedbbcbceebaecedcbabdecbcaecdcebddadceceeaeecbbceebacbccbaadcbbcabdcaeaaddaebadbcabceecedeeabdcbddaeebbccbadcaaeabdabeecaacddaddeeaeeeabedebbcabaaccaddacaeddbbeacadccddeeeecdaadaaedebccdaecbcaeaccaeebbbccaebbcaadddacbaaaccdabeeaaaaaaecbadbcaeaecebebebdabaeeecdaecacbaaacdaddeebbccbcdbdcdbbbddceebedaceabbadededeeecccedebbbdcdcaeaecbcbbdaeabdcabbcdabcbbcbeeaeebceccbdcacaceedbcbaaeccaebdadbcedb","ccdcbcbcbacecabdbbbcdaeedbacccbabbdbceecbeebccabddeeebdccdcecbddebaddadddbbaadbdebddcddabeebceececcaeaaabdeebaeeebeddbdeeecbaedeceabbadbdeaecadabccbbdebcdccacbdacaebddbadbcaadcedccbedaadcdddddbebcadaadcbcdbaadbcdeacbccbeccbdababbcaaeeeebaadadcacedebceaaeebdeebbdeecbaabacacbaebbcbdcebddebcdcdbddceedcadeaebdcbecadacebcadaaccaddbcdcbdacbdbaccdecdaeeccecadcbaccabdaedebbbcbdcbcedcacbcceeecccdab"};
+        for(String str : arr)
+            trie.insert(str, 0);
+        
+    }
+}
