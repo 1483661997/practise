@@ -26,8 +26,6 @@ public class DynamicPasswordSolution {
         }
         return str.toString();
     }
-    public String dynamicPassword(String password, int target) {
-        
-    }
+
 
 }
