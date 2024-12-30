@@ -37,13 +37,28 @@ public class AnswerStringSolution {
     public static void main(String[] args) {
         AnswerStringSolution sol = new AnswerStringSolution();
 
-        System.out.println(sol.maxSubstringInBox1("dbca", 2)); // 期望: "dbc"
-        System.out.println(sol.maxSubstringInBox1("aann", 2)); // 期望: "g"
+        System.out.println(sol.answerString("dbca", 2)); // 期望: "dbc"
+        System.out.println(sol.answerString("aann", 2)); // 期望: "g"
 
         // 也可再加一些其他测试
-        System.out.println(sol.maxSubstringInBox1("abc", 1)); // 把整个串"abc"分成1段 => "abc"
-        System.out.println(sol.maxSubstringInBox1("abc", 2)); // 所有拆分: "a|bc","ab|c" => 盒子: "a","bc","ab","c" => max是"bc"
+        System.out.println(sol.answerString("abc", 1)); // 把整个串"abc"分成1段 => "abc"
+        System.out.println(sol.answerString("abc", 2)); // 所有拆分: "a|bc","ab|c" => 盒子: "a","bc","ab","c" => max是"bc"
     }
+
+    public String answerString(String word, int numFriends) {
+        if(numFriends == 1) return word;
+
+        String maxString = "";
+        int len = word.length();
+        int region = len - numFriends;
+        for(int i = 0; i < len; i++){
+            String tmp = word.substring(i, Math.min(i + len - numFriends + 1, len));
+            if(tmp.compareTo(maxString) > 0) maxString = tmp;
+        }
+        return maxString;
+    }
+
+
     // ------------------ 可自行调参的大质数 MOD 和哈希基数 base ------------------
     static final long MOD = 1000000007L;
     static final long BASE = 13131L;
@@ -179,18 +194,6 @@ public class AnswerStringSolution {
     // ------------------ 测试用例 ------------------
 
     String maxString = "";
-    public String answerString(String word, int numFriends) {
-        if(numFriends == 1) return word;
-
-        String maxString = "";
-        int len = word.length();
-        int region = len - numFriends;
-        for(int i = 0; i <= len - region; i++){
-            String tmp = word.substring(i, i+region);
-            if(tmp.compareTo(maxString) > 0) maxString = tmp;
-        }
-        return maxString;
-    }
 
     public String backTrack(String word, int numFriends, int begin, String maxString ){
         if(numFriends == 1){
