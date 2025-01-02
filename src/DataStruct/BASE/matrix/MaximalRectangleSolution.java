@@ -1,4 +1,4 @@
-package DataStruct.BASE.matrix;
+package DataStruct.BASE.Matrix;
 
 /*
  * 85. 最大矩形

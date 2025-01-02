@@ -1,4 +1,4 @@
-package DataStruct.BASE.skill;
+package DataStruct.BASE.Skill;
 
 
 /*

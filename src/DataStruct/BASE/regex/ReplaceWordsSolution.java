@@ -1,4 +1,4 @@
-package DataStruct.BASE.regex;
+package DataStruct.BASE.Regex;
 
 import java.util.Arrays;
 import java.util.List;

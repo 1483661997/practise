@@ -1,4 +1,4 @@
-package DataStruct.BASE.skill;
+package DataStruct.BASE.Skill;
 /*
  * 169. 多数元素
 简单
