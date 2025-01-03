@@ -1,4 +1,4 @@
-package DataStruct.BASE.regex;
+package DataStruct.BASE.Regex;
 
 /*
  * 65. 有效数字
@@ -46,7 +46,7 @@ public class IsNumberSolution {
         
         String regex = "([+]|[-])?((\\d+([.]\\d+)?)|\\d+([.])?|[.]\\d+)(([e]|[E])([+]|[-])?\\d+)?";
         // String regex1 = "([+]|[-])? \\d+([.])?       (([e]|[E])([+]|[-])?\\d+)?";
-// String regex2 = "([+]|[-])? [.]\\d+          (([e]|[E])([+]|[-])?\\d+)?";
+        // String regex2 = "([+]|[-])? [.]\\d+          (([e]|[E])([+]|[-])?\\d+)?";
 
 
 
