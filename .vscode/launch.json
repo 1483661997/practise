@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MyCalendarTwo",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.Struct.MyCalendarTwo",
+            "projectName": "practise_80d0c2d3"
+        },
+        {
+            "type": "java",
             "name": "MinTotalDistanceSolution",
             "request": "launch",
             "mainClass": "DataStruct.BASE.matrix.MinTotalDistanceSolution",

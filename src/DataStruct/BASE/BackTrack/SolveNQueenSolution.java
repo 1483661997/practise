@@ -89,7 +89,7 @@ public class SolveNQueenSolution {
                 str.insert(i,'Q');
                 list.add(str.toString());
                 backTrack(list, n, pos+1);
-                list.removeLast();
+                // list.removeLast();
                 colE[i] = false;
                 diagRight[pos+i] = false;
                 diagLeft[n+pos-i] = false;
