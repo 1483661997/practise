@@ -3,6 +3,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MinTotalDistanceSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.matrix.MinTotalDistanceSolution",
+            "projectName": "practise_80d0c2d3"
+        },
+        {
+            "type": "java",
+            "name": "MyCalendar",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.Struct.MyCalendar",
+            "projectName": "practise_80d0c2d3"
+        },
+        {
+            "type": "java",
+            "name": "ConvertDateToBinarySolution",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.String.ConvertDateToBinarySolution",
+            "projectName": "practise_80d0c2d3"
+        },
+        {
+            "type": "java",
             "name": "OccurrencesOfElementSolution",
             "request": "launch",
             "mainClass": "DataStruct.BASE.Array.OccurrencesOfElementSolution",
