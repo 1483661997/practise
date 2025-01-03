@@ -1,4 +1,6 @@
-package DataStruct.BASE.matrix;
+package DataStruct.BASE.Matrix;
+
+import java.util.Arrays;
 
 /**
  * 3218. 切蛋糕的最小总开销 I
@@ -38,7 +40,23 @@ package DataStruct.BASE.matrix;
  */
 
 public class MinimumCostSolution {
-    public int minimumCost(int m, int n, int[] horizontalCut, int[] verticalCut) {
-        return  0;
+    public static void main(String[] args) {
+        System.out.println(new MinimumCostSolution().minimumCost(3,2,new int[]{1,3}, new int[]{5}));
+    }
+    public long minimumCost(int m, int n, int[] horizontalCut, int[] verticalCut) {
+        Arrays.sort(horizontalCut);
+        Arrays.sort(verticalCut);
+
+        long res = 0;
+        int i = 0, j = 0;
+        while (i < m-1 || j < n-1){
+            if((j == n-1) || (i < m-1 && horizontalCut[i] < verticalCut[j])){
+                res += horizontalCut[i++] * (n-j);
+            }else{
+                res += verticalCut[j++] * (m-i);
+            }
+        }
+
+        return  res;
     }
 }
