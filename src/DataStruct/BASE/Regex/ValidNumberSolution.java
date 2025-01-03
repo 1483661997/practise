@@ -1,4 +1,4 @@
-package DataStruct.BASE.regex;
+package DataStruct.BASE.Regex;
 
 /**
  * LCR 138. 有效数字

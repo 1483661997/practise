@@ -20,16 +20,13 @@ import java.util.List;
  */
 public class ArraysIntersectionSolution {
     public static void main(String[] args) {
-        for(int i :new ArraysIntersectionSolution().arraysIntersection(new int[]{1,2,3,4,5}, new int[]{1,2,5,7,9}, new int[]{1,3,5})){
-            System.out.println(i);
-        }
+
     }
     public List<Integer> arraysIntersection(int[] arr1, int[] arr2, int[] arr3) {
         int len1 = arr1.length, len2 = arr2.length, len3 = arr3.length;
         int pos1 = 0, pos2 = 0, pos3 = 0;
         List<Integer> ans = new ArrayList<>();
         while (pos1 < len1 && pos2 < len2 && pos3 < len3){
-
             if(arr1[pos1] == arr2[pos2] && arr2[pos2] == arr3[pos3]){
                 ans.add(arr1[pos1]);
                 pos1++;
