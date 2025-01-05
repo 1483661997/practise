@@ -30,6 +30,19 @@ import java.util.*;
  * 最多调用 book 1000 次。
  */
 class MyCalendarTwo {
+    public static void main(String[] args) {
+        MyCalendarTwo myCalendarTwo = new MyCalendarTwo();
+        System.out.println(myCalendarTwo.book(10, 20));
+        System.out.println(myCalendarTwo.book(50, 60));
+        System.out.println(myCalendarTwo.book(10, 40));
+        System.out.println(myCalendarTwo.book(5, 15));
+        System.out.println(myCalendarTwo.book(5, 10));
+        System.out.println(myCalendarTwo.book(25, 55));
+        for(int[] i : myCalendarTwo.rebook ){
+            System.out.println(i[0] + " " + i[1]);
+        }
+
+    }
 
     List<int[]> list;
     List<int[]> repeat;
@@ -38,7 +51,34 @@ class MyCalendarTwo {
         repeat = new ArrayList<>();
     }
     
+<<<<<<< HEAD
 //    public boolean book(int startTime, int endTime) {
 //
 //    }
+=======
+    public boolean book(int startTime, int endTime) {
+        int len = list.size();
+        int len1 = rebook.size();
+        int pos = 0;
+        int pos1 = 0;
+        while (pos < len && startTime >= list.get(pos)[1]) {
+            pos++;
+        }
+        
+        while (pos1 < len1 && startTime >= rebook.get(pos1)[1]) {
+            pos1++;
+        }
+        if(pos1 < len1 && endTime > list.get(pos1)[0]) return false;
+
+
+        while( pos < len && ( endTime > list.get(pos)[0])){
+            rebook.add(new int[]{list.get(0)[0], endTime});
+            pos++;
+        }
+
+
+        list.add(pos, new int[]{startTime, endTime});
+        return true;
+    }
+>>>>>>> 138e55fe98568d6abe51f63aeb562d97d7c05adf
 }
