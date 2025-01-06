@@ -1,5 +1,7 @@
 package DataStruct.Leetcode.Competition431;
 
+import java.util.Arrays;
+
 /**
  * Q3. 收集连续 K 个袋子可以获得的最多硬币数量
  * 中等
@@ -30,32 +32,41 @@ package DataStruct.Leetcode.Competition431;
  */
 public class MaximumCoinsSolution {
     public static void main(String[] args) {
-        int[][] coins = new int[][]{{8,10,1},{1,3,2},{5,6,4}};
-        System.out.println(new MaximumCoinsSolution().maximumCoins(coins, 4));
+        int[][] coins = new int[][]{{1,1000000000,1000}};
+        System.out.println(new MaximumCoinsSolution().maximumCoins(coins, 1000000000));
     }
     public long maximumCoins(int[][] coins, int k) {
-        int[] arr = new int[110];
-        int m = coins.length;
-        for(int i = 0; i < m; i++){
-            int li = coins[i][0], ri = coins[i][1], ci = coins[i][2];
-            for(int j = li; j <= ri; j++){
-                arr[j] = ci;
+        long ans = maximumWhiteTiles(coins, k);
+
+        for(int i = 0; i < coins.length; i++){
+            int tmp = - coins[i][0];
+            coins[i][0] = -coins[i][1];
+            coins[i][1] = tmp;
+        }
+
+        return Math.max(ans, maximumWhiteTiles(coins, k));
+    }
+
+    public long maximumWhiteTiles(int[][] tiles, int carpetLen) {
+        Arrays.sort(tiles, (a, b) -> Integer.compare(a[0], b[0]));
+        long cover = 0;
+        long ans = 0;
+        int left = 0;
+        for(int[] tile : tiles){
+            int tl = tile[0], tr = tile[1];
+            cover += (long)(tr - tl + 1) * tile[2];
+            // System.out.println(cover);
+
+            while (tr > tiles[left][1] + carpetLen - 1){
+                cover -= (long)(tiles[left][1] - tiles[left][0] + 1) * tiles[left][2];
+                left++;
             }
-        }
 
-        int left = 0, right = 0;
-        long sum = 0, max = 0;
-        while (right < k){
-            sum+=arr[right++];
-        }
-        max = sum;
+            long uncover = Math.max((long)(tr - carpetLen + 1 - tiles[left][0]) * tiles[left][2], 0);
+            ans = Math.max(ans, cover-uncover);
 
-        while (right <110){
-            sum -= arr[left++];
-            sum += arr[right++];
-            if(sum > max) max = sum;
-        }
 
-        return max;
+        }
+        return ans;
     }
 }

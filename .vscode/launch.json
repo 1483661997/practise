@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MaximumCoinsSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.Leetcode.Competition431.MaximumCoinsSolution",
+            "projectName": "practise_80d0c2d3"
+        },
+        {
+            "type": "java",
             "name": "MyCalendarTwo",
             "request": "launch",
             "mainClass": "DataStruct.BASE.Struct.MyCalendarTwo",
