@@ -83,12 +83,17 @@ class MyCalendarTwo {
     }
 
     List<int[]> list;
-    List<int[]> rebook;
+    List<int[]> repeat;
     public MyCalendarTwo() {
         list = new ArrayList<>();
-        rebook = new ArrayList<>();
+        repeat = new ArrayList<>();
     }
     
+<<<<<<< HEAD
+//    public boolean book(int startTime, int endTime) {
+//
+//    }
+=======
     public boolean book(int startTime, int endTime) {
         int len = list.size();
         int len1 = rebook.size();
@@ -115,4 +120,5 @@ class MyCalendarTwo {
         list.add(pos, new int[]{startTime, endTime});
         return true;
     }
+>>>>>>> 138e55fe98568d6abe51f63aeb562d97d7c05adf
 }
