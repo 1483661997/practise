@@ -32,15 +32,53 @@ import java.util.*;
 class MyCalendarTwo {
     public static void main(String[] args) {
         MyCalendarTwo myCalendarTwo = new MyCalendarTwo();
-        System.out.println(myCalendarTwo.book(10, 20));
-        System.out.println(myCalendarTwo.book(50, 60));
-        System.out.println(myCalendarTwo.book(10, 40));
-        System.out.println(myCalendarTwo.book(5, 15));
-        System.out.println(myCalendarTwo.book(5, 10));
-        System.out.println(myCalendarTwo.book(25, 55));
-        for(int[] i : myCalendarTwo.rebook ){
+        // System.out.println(myCalendarTwo.book(10, 20));
+        // System.out.println(myCalendarTwo.book(50, 60));
+        // System.out.println(myCalendarTwo.book(10, 40));
+        // System.out.println(myCalendarTwo.book(5, 15));
+        // System.out.println(myCalendarTwo.book(5, 10));
+        // System.out.println(myCalendarTwo.book(25, 55));
+
+        /*
+         * [[],[26,35],[26,32],[25,32],[18,26],[40,45],[19,26],[48,50],[1,6],[46,50],[11,18]]
+         * [null,true,true,false,true,true,true,true,true,true,true]
+         */
+
+        //  System.out.println(myCalendarTwo.book(26,35));
+        //  System.out.println(myCalendarTwo.book(26,32));
+        //  System.out.println(myCalendarTwo.book(25,32));
+        //  System.out.println(myCalendarTwo.book(18,26));
+        //  System.out.println(myCalendarTwo.book(40,45));
+        //  System.out.println(myCalendarTwo.book(19,26));//* */
+        //  System.out.println(myCalendarTwo.book(48,50));
+        //  System.out.println(myCalendarTwo.book(1,6));
+        //  System.out.println(myCalendarTwo.book(46,50));
+        //  System.out.println(myCalendarTwo.book(11,18));//* */
+
+
+         /**
+          * [[],[24,40],[43,50],[27,43],[5,21],[30,40],[14,29],[3,19],[3,14],[25,39],[6,19]]
+          */
+
+          System.out.println(myCalendarTwo.book(24,40 ));
+          System.out.println(myCalendarTwo.book(43,50 ));
+          System.out.println(myCalendarTwo.book(27,43 ));
+          System.out.println(myCalendarTwo.book(2,21 ));
+          System.out.println(myCalendarTwo.book(30,40 ));
+          System.out.println(myCalendarTwo.book(14,29 ));
+          System.out.println(myCalendarTwo.book(3,19 ));
+          System.out.println(myCalendarTwo.book(3,14 ));
+          System.out.println(myCalendarTwo.book(25,39 ));
+          System.out.println(myCalendarTwo.book(6,19 ));
+  
+          for(int[] i : myCalendarTwo.rebook ){
             System.out.println(i[0] + " " + i[1]);
         }
+
+        // System.out.println("???");
+        // for(int[] i : myCalendarTwo.list){
+        //     System.out.println(i[0] + " " + i[1]);
+        // }
 
     }
 
@@ -63,11 +101,13 @@ class MyCalendarTwo {
         while (pos1 < len1 && startTime >= rebook.get(pos1)[1]) {
             pos1++;
         }
-        if(pos1 < len1 && endTime > list.get(pos1)[0]) return false;
+        if(pos1 < len1 && endTime > rebook.get(pos1)[0]){
+            return false;
+        }
 
 
         while( pos < len && ( endTime > list.get(pos)[0])){
-            rebook.add(new int[]{list.get(0)[0], endTime});
+            rebook.add(pos1, new int[]{Math.max(startTime, list.get(pos)[0]), Math.min(endTime, list.get(pos)[1])});
             pos++;
         }
 
