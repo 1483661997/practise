@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CountTextsSolution",
+            "request": "launch",
+            "mainClass": "DataStruct.BASE.String.CountTextsSolution",
+            "projectName": "practise_80d0c2d3"
+        },
+        {
+            "type": "java",
             "name": "MaximumCoinsSolution",
             "request": "launch",
             "mainClass": "DataStruct.Leetcode.Competition431.MaximumCoinsSolution",
