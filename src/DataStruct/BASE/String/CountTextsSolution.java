@@ -30,11 +30,21 @@ public class CountTextsSolution {
     public int Mod = 1000000007;
     public static void main(String[] args) {
         //537551452
-        String str = "88888888888888888888888888888"+
-                     "99999999999999999999999999999"+
-                     "44444444444444444444444444444" +
-                     "88888888888888888888888888888" ;
-        System.out.println(new CountTextsSolution().countTexts(str));
+//        String str = "88888888888888888888888888888"+
+//                     "99999999999999999999999999999"+
+//                     "44444444444444444444444444444" +
+//                     "88888888888888888888888888888" ;
+//        System.out.println(new CountTextsSolution().countTexts(str));
+//
+
+        long longValue = 9223372036854775807L;  // Long.MAX_VALUE
+        double doubleValue = longValue;
+
+        long mod = 1000000007L;
+        System.out.println("Long modulo: " + (longValue % mod));       // 正确的取余结果
+        System.out.println("Double modulo: " + (doubleValue % mod));  // 可能不准确
+
+
     }
     public int countTexts(String pressedKeys) {
         int len = pressedKeys.length();
