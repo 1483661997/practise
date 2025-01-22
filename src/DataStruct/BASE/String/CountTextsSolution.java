@@ -27,7 +27,6 @@ Alice 可能发出的文字信息包括：
 
  */
 public class CountTextsSolution {
-    public int Mod = 1000000007;
     public static void main(String[] args) {
         //537551452
 //        String str = "88888888888888888888888888888"+
@@ -47,6 +46,7 @@ public class CountTextsSolution {
 
     }
     public int countTexts(String pressedKeys) {
+        final int Mod = 1000000007;
         int len = pressedKeys.length();
         long[] dp3 = new long[len < 3 ? 3 : len];
         long[] dp4 = new long[len < 4 ? 4 : len];
