@@ -1,5 +1,7 @@
 package DataStruct.BASE.Array;
+import java.util.*;
 
+import DataStruct.BASE.BinarySearch.searchInsertSolution;
 /**
  * 3287. 求出数组中最大序列值
  * 困难
@@ -23,24 +25,23 @@ package DataStruct.BASE.Array;
  */
 public class MaxValueSolution {
     public int maxValue(int[] nums, int k) {
+    }
+    public List<Set<Integer>> findOr(int[] nums, int k){
+        List<Set<Integer>> ans = new ArrayList<>();
         int len = nums.length;
-        if(2 * k > len) return 0;
-        int[][] dp = new int[len][len];
-
-        int ans = 0;
-
         for(int i = 0; i < len; i++){
-            dp[i][i] = nums[i];
+            ans.add(new HashSet<>());
         }
 
         for(int i = 0; i < len; i++){
-            for(int j = i + 1; j < len; j++){
-                dp[i][j] = nums[j] & dp[i][j-1];
+            for(int j = Math.min(k-1, i+1); j >= 0; j--){
+                for(int x : ans.get(j))
+                    ans.get(j+1).add(x | nums[i]);
             }
-        }
 
-        return  0;
+        }
+        
+        return ans;
 
     }
-
 }
