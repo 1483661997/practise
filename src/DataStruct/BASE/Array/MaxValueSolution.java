@@ -24,24 +24,52 @@ import DataStruct.BASE.BinarySearch.searchInsertSolution;
  * 1 <= nums[i] < 27
  */
 public class MaxValueSolution {
+    public static void main(String[] args) {
+        System.out.println(new MaxValueSolution().maxValue(new int[]{4,5,6,7}, 2));
+    }
     public int maxValue(int[] nums, int k) {
+        List<Set<Integer>> A = findOr(nums, k);
+        List<Set<Integer>> B = findOr(reverse(nums), k);
+        int max = 0;
+        for(int i = k - 1; i < nums.length - k; i++){
+            for(int a : A.get(i)){
+                for(int b: B.get(nums.length-i-2)){
+                    max = Math.max(max, a ^ b);
+                }
+            }
+        }
+        return max;
     }
     public List<Set<Integer>> findOr(int[] nums, int k){
+        List<Set<Integer>> prev= new ArrayList<>();
         List<Set<Integer>> ans = new ArrayList<>();
         int len = nums.length;
         for(int i = 0; i < len; i++){
-            ans.add(new HashSet<>());
+            prev.add(new HashSet<>());
         }
 
+        prev.get(0).add(0);
         for(int i = 0; i < len; i++){
             for(int j = Math.min(k-1, i+1); j >= 0; j--){
-                for(int x : ans.get(j))
-                    ans.get(j+1).add(x | nums[i]);
+                for(int x : prev.get(j))
+                    prev.get(j+1).add(x | nums[i]);
             }
-
+            ans.add(new HashSet<>(prev.get(k)));
         }
         
         return ans;
 
+    }
+    public int[] reverse(int[] nums){
+        int left = 0, right = nums.length-1;
+        while (left < right){
+            int tmp = nums[left];
+            nums[left] = nums[right];
+            nums[right] = tmp;
+
+            left++;
+            right--;
+        }
+        return nums;
     }
 }
